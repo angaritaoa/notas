@@ -1,5 +1,7 @@
 # Notas de desarrollo de Software
 
+* [Diseño de Clases Basado en Políticas](Diseño-de-Clases-Basado-en-Políticas)
+
 ```cpp
 #ifndef SESSION_HPP
 #define SESSION_HPP
