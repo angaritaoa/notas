@@ -1,4 +1,0 @@
-/dev/sda1	/boot/efi	vfat	umask=0077	0	1
-/dev/sda3	/		ext4	noatime,errors=remount-ro	0	1
-/dev/sda2	/mnt/windows	ntfs	noatime,noauto,nodiratime,users	0	0
-/dev/sdb1	/mnt/seagate	ntfs	noatime,noauto,nodiratime,users	0	0
