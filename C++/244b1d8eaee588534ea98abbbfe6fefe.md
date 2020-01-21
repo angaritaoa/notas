@@ -8,14 +8,14 @@
 	- [Mapeo de tipo a tipo](#mapeo-de-tipo-a-tipo)
 	- [Selección de tipo](#selecci%c3%b3n-de-tipo)
 	- [Detección de convertibilidad y herencia en tiempo de compilación](#detecci%c3%b3n-de-convertibilidad-y-herencia-en-tiempo-de-compilaci%c3%b3n)
-	- [Un envoltorio alrededor type_info](#un-envoltorio-alrededor-typeinfo)
-	- [NullType &amp; EmptyType](#nulltype-amp-emptytype)
+	- [Un envoltorio alrededor `type_info`](#un-envoltorio-alrededor-typeinfo)
+	- [NullType & EmptyType](#nulltype--emptytype)
 	- [Características de tipo](#caracter%c3%adsticas-de-tipo)
 		- [Implementación de características de puntero](#implementaci%c3%b3n-de-caracter%c3%adsticas-de-puntero)
 		- [Detección de tipos fundamentales](#detecci%c3%b3n-de-tipos-fundamentales)
 		- [Tipos de parámetros optimizados](#tipos-de-par%c3%a1metros-optimizados)
 		- [Stripping Qualifiers](#stripping-qualifiers)
-		- [Usando TypeTraits](#usando-typetraits)
+		- [Usando `TypeTraits`](#usando-typetraits)
 		- [Terminando](#terminando)
 	- [Resumen](#resumen)
 	- [Table TypeTraits<T> Members](#table-typetraitst-members)
@@ -1002,7 +1002,7 @@ Una serie de técnicas de los componentes básicos de los componentes presentes 
 | `PointeeType`      | Type              | Evaluates to the type to which `T` points, if `T` is a pointer. Otherwise, evaluates to `NullType`.                                     |
 | `isReference`      | Boolean, constant | True if `T` is a reference.                                                                                                             |
 | `ReferencedType`   | Type              | If `T` is a reference, evaluates to the type to which `T` refers. Otherwise, evaluates to the type `T` itself.                          |
-| ParameterType      | Type              | The type that's most appropriate as a parameter of a nonmutable function. Can be either T or const T&.                                  |
+| `ParameterType`    | Type              | The type that's most appropriate as a parameter of a nonmutable function. Can be either T or const T&.                                  |
 | `isConst`          | Boolean, constant | True if `T` is a `const`-qualified type.                                                                                                |
 | `NonConstType`     | Type              | Removes the `const` qualifier, if any, from type `T`.                                                                                   |
 | `isVolatile`       | Boolean, constant | True if `T` is a `volatile`-qualified type.                                                                                             |
@@ -1014,3 +1014,4 @@ Una serie de técnicas de los componentes básicos de los componentes presentes 
 | `isStdFloat`       | Boolean, constant | True if `T` is a standard floating-point type (`float`, `double`, or `long double`).                                                    |
 | `isStdArith`       | Boolean, constant | True if T is a standard arithmetic type (integral or floating point).                                                                   |
 | `isStdFundamental` | Boolean, constant | True if `T` is a fundamental type (arithmetic or `void`).                                                                               |
+
