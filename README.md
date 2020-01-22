@@ -2,7 +2,15 @@
 
 ## Lenguajes de programación
 
-* [C++](C++/8bcdab5e21498c4e74750b11914a2818.md)
+- [C++](C++/8bcdab5e21498c4e74750b11914a2818.md)
+
+## Bases de Datos
+
+- [MySQL](Database/62a004b95946bb97541afa471dcca73a.md)
+
+## Sistemas Operativos
+
+- [Debian](Debian/6fe8b98c53e8d099686936732785d471.md)
 
 ## Arquitectura REST API
 
