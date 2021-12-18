@@ -1,0 +1,93 @@
+#+title: Mi configuración personalizada de Doom Emacs
+#+startup: nofold
+
+* Install
+
+#+begin_src bash
+sudo dnf install git emacs ripgrep fd-find ShellCheck marked
+git clone https://github.com/hlissner/doom-emacs ~/.emacs.d
+~/.emacs.d/bin/doom install
+#+end_src
+
+#+begin_quote
+Agregar =~/.emacs.d/bin= al ~PATH~. ~export PATH=$HOME/.emacs.d/bin:$PATH~
+#+end_quote
+
+** La utilidad ~bin/doom~
+
+Esta utilidad va a cargar con gran parte del trabajo asociado a la gestión y mantenimiento de tu configuración de Doom Emacs, y algo más.
+
++ ~doom sync~: Esto sincroniza la configuración con Doom Emacs. Asegura que los paquetes necesarios se instalen, los paquetes huérfanos se eliminen y los metadatos necesarios se generen correctamente. Ejecutar esto cada vez que se modifique el bloque ~doom!~ o el archivo ~packages.el~.
++ ~doom upgrade~: Actualiza Doom Emacs (si está disponible) y todos sus paquetes.
++ ~doom env~: (Re)genera un "archivo envvar", que es una instantánea de tu entorno de shell que Doom carga al inicio. Si tu lanzador de aplicaciones o tu sistema operativo lanza Emacs en un entorno equivocado, necesitarás esto. **Esto es necesario para los usuarios de GUI Emacs en MacOS.
++ ~doom doctor~: Si Doom se comporta mal, el doctor diagnosticará problemas comunes con su instalación, sistema y entorno.
++ ~doom purge~: Con el tiempo, los repositorios de los plugins de Doom se acumulan. Ejecute este comando de vez en cuando para eliminar los paquetes viejos y huérfanos, y con la opción ~-g~ para compactar los repositorios de paquetes existentes.
+
+Utilizar ~doom help~ para ver un resumen de los comandos disponibles que proporciona ~doom~, y ~doom help COMMAND~ para mostrar la documentación de un ~COMMAND~
+
+* Dependencias externas
+
+Doom se compone de aproximadamente 160 módulos que proporcionan sus características, soporte de lenguaje e integración con herramientas externas. Muchos de ellos tienen dependencias externas que debes instalar tú mismo. Encontrarás lo que necesita un módulo y cómo instalarlo en el archivo README.org de ese módulo o ejecutando ~bin/doom doctor~.
+
+El [[https://github.com/hlissner/doom-emacs/blob/develop/docs/modules.org][índice de módulos]] lista todos los módulos disponibles de Doom, con enlaces a su documentación. La documentación es un trabajo en progreso; ¡algunos módulos pueden no tener archivos README.org todavía!
+
+#+begin_quote
+Utilizar ~M-x doom/help-modules~ para saltar a la documentación de un módulo desde Doom
+#+end_quote
+
+* Update y Rollback
+
+#+begin_src bash
+doom upgrade   # or 'doom up'
+#+end_src
+
+Si quieres actualizar Doom manualmente, ~doom upgrade~ es equivalente a:
+
+#+begin_src bash
+cd ~/.emacs.d
+git pull        # updates Doom
+doom clean      # Ensure your config isn't byte-compiled
+doom sync       # synchronizes your config with Doom Emacs
+doom update     # updates installed packages
+#+end_src
+
+Para actualizar sólo sus paquetes (y no el propio Doom):
+
+#+begin_src bash
+doom upgrade --packages
+#+end_src
+
+Para minimizar los problemas durante la actualización, evite modificar los archivos fuente de doom en =~/.emacs.d=. Toda su personalización debe mantenerse en su =DOOMDIR= (e.g. =~/.doom.d=). Lea la sección configurar para más información sobre la configuración de Doom.
+
+* Rollback
+
+El script =bin/doom= no ofrece actualmente soporte de rollback para Doom o sus paquetes.
+
+* Configure
+
+Puede configurar Doom modificando los archivos que se encuentran en su =DOOMDIR=. Doom espera que este directorio se encuentre en una de las siguientes rutas:
+
+1. =~/.config/doom= (respects ~$XDG_CONFIG_HOME~)
+2. =~./doom.d=
+
+Este directorio se denomina =DOOMDIR=. Sólo debe existir uno de estos directorios (Doom sólo reconocerá uno).
+
+#+begin_quote
+Cambie la variable de entorno =DOOMDIR= para cambiar dónde Doom busca este directorio. Los enlaces simbólicos también funcionarán.
+#+end_quote
+
+Cuando ejecutó =doom install=, se desplegó una configuración simple de Doom en su =DOOMDIR=, compuesta por estos tres archivos:
+
++ init.el :: Donde encontrarás tu bloque =doom!=, que controla qué módulos de Doom están habilitados y en qué orden se cargarán.
+
+  Este fichero se evalúa al principio del proceso de arranque de Emacs, antes de que se cargue cualquier otro módulo. Generalmente no deberías añadir código a este archivo a menos que estés apuntando al CLI de Doom o a algo que necesite ser configurado muy temprano en el proceso de arranque.
++ config.el :: Aquí es donde debe ir el 99,99% de su configuración privada. Todo lo que esté aquí se evalúa después de que se hayan cargado todos los demás módulos, al iniciar Emacs.
++ packages.el :: La gestión de paquetes se realiza desde este archivo; donde declarará qué paquetes instalar y desde dónde.
+
+#+begin_quote
+Nota: no utilice =M-x customize= o la API de customize en general. Doom está diseñado para ser configurado programáticamente desde su config.el, lo que puede entrar en conflicto con la forma de modificar variables de Customize.
+
+Si te preocupan los =defcustom= setters, Doom tiene una macro =setq!= que los activará.
+#+end_quote
+
+* Modules
