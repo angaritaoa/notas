@@ -24,3 +24,5 @@ En su forma más simple, Terminator es un emulador de terminal como xterm, gnome
 | Enfocar el terminal superior  | =Alt + ↑=          |
 | Dividir horizontalmente       | =Ctrl + Shift + O= |
 | Dividir verticalmente         | =Ctrl + Shift + E= |
+
+[[img:dark.png][Colores]]
