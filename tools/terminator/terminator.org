@@ -16,11 +16,11 @@ En su forma más simple, Terminator es un emulador de terminal como xterm, gnome
 
 ** Shortcuts
 
-| Acción                        | Shortcuts              |
-|-------------------------------+------------------------|
-| Enfocar el terminal inferior  | =Alt + ↓=              |
-| Enfocar el terminal izquierdo | =Alt + ←=              |
-| Enfocar el terminal derecho   | =Alt + →=              |
-| Enfocar el terminal superior  | =Alt + ↑=              |
-| Dividir horizontalmente       | =Shift= + =Ctrl= + =O= |
-| Dividir verticalmente         | =Shift= + =Ctrl= + =E= |
+| Acción                        | Shortcuts          |
+|-------------------------------+--------------------|
+| Enfocar el terminal inferior  | =Alt + ↓=          |
+| Enfocar el terminal izquierdo | =Alt + ←=          |
+| Enfocar el terminal derecho   | =Alt + →=          |
+| Enfocar el terminal superior  | =Alt + ↑=          |
+| Dividir horizontalmente       | =Ctrl + Shift + O= |
+| Dividir verticalmente         | =Ctrl + Shift + E= |
