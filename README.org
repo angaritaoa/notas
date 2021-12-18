@@ -1,4 +1,6 @@
-# Notas de desarrollo de Software
+#+title: Notas de desarrollo de Software
+#+startup: nofold
+
 
 ## Lenguajes de programación
 
