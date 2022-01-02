@@ -2,7 +2,7 @@
 #+startup: nofold
 
 * Develop
-** [[file:develop/emacs/emacs.org][Emacs]]
-** [[file:develop/git/git.org][Git]]
+- [[file:develop/emacs/emacs.org][Emacs]]
+- [[file:develop/git/git.org][Git]]
 * Tools
-** [[file:tools/terminator/terminator.org][Terminator]]
+- [[file:tools/terminator/terminator.org][Terminator]]
