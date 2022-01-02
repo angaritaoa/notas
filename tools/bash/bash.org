@@ -62,5 +62,18 @@ construcciones de control de flujo, citas y funciones.
 Los shells ofrecen características orientadas específicamente al uso interactivo
 más  que  a   aumentar  el  lenguaje  de   programación.  Estas  características
 interactivas  incluyen  el control  de  trabajos,  la  edición  de la  línea  de
-comandos,  el   historial  de  comandos   y  los   alias.  Cada  una   de  estas
-características se describe en este manual.
+comandos,  el   historial  de  comandos   y  los   alias.
+
+* Definiciones
+Estas definiciones se utilizan en el resto de este manual.
+
+** POSIX
+Una familia  de estándares de sistemas  abiertos basados en Unix.  Bash se ocupa
+principalmente de la parte de Shell y Utilidades del estándar POSIX 1003.1.
+
+** blank
+Un espacio o carácter de tabulación.
+
+** builtin
+Un comando que es implementado internamente por el propio shell, en lugar de por
+un programa ejecutable en algún lugar del sistema de archivos.
