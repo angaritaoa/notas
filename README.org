@@ -6,3 +6,4 @@
 - [[file:develop/git/git.org][Git]]
 * Tools
 - [[file:tools/terminator/terminator.org][Terminator]]
+- [[file:tools/bash/bash.org][Bash]]

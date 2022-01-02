@@ -1,0 +1,66 @@
+#+title: Bash
+
+* ¿Qué es Bash?
+Bash  es el  shell,  o intérprete  del  lenguaje de  comandos,  para el  sistema
+operativo GNU.  El nombre es  un acrónimo de  'Bourne-Again SHell', un  juego de
+palabras con Stephen  Bourne, el autor del ancestro directo  del actual shell de
+Unix sh, que apareció en la séptima  edición de la versión de Bell Labs Research
+de Unix.
+
+Bash es en gran medida compatible  con sh e incorpora características útiles del
+shell  Korn ksh  y del  shell  C csh.  Se  pretende que  sea una  implementación
+conforme a  la parte  de IEEE POSIX  Shell and Tools  de la  especificación IEEE
+POSIX (IEEE Standard 1003.1). Ofrece mejoras funcionales con respecto a sh tanto
+para el uso interactivo como para la programación.
+
+Aunque el sistema operativo GNU proporciona otros shells, incluyendo una versión
+de csh, Bash es el shell por defecto. Al igual que otro software de GNU, Bash es
+bastante portable. Actualmente se ejecuta en  casi todas las versiones de Unix y
+algunos    otros   sistemas    operativos   -    existen   puertos    soportados
+independientemente para las plataformas MS-DOS, OS/2 y Windows.
+
+* ¿Qué es un shell?
+En  su  base, un  shell  es  simplemente un  procesador  de  macros que  ejecuta
+comandos. El término  procesador de macros se refiere a  una funcionalidad en la
+que el texto y los símbolos se expanden para crear expresiones más amplias.
+
+Un  shell de  Unix  es tanto  un  intérprete  de comandos  como  un lenguaje  de
+programación. Como intérprete  de comandos, el shell proporciona  la interfaz de
+usuario al rico conjunto de utilidades  de GNU. Las características del lenguaje
+de programación permiten combinar estas utilidades. Se pueden crear archivos que
+contengan comandos, y  que se conviertan en comandos en  sí mismos. Estos nuevos
+comandos tienen  el mismo estatus  que los  comandos del sistema  en directorios
+como  /bin,  lo  que  permite  a  los  usuarios  o  grupos  establecer  entornos
+personalizados para automatizar sus tareas comunes.
+
+Los shells pueden  utilizarse de forma interactiva o no  interactiva. En el modo
+interactivo, aceptan las entradas escritas  desde el teclado. Cuando se ejecutan
+de forma no interactiva, los shells ejecutan comandos leídos desde un archivo.
+
+Un shell  permite la ejecución de  comandos GNU, tanto de  forma sincrónica como
+asincrónica. El shell  espera a que los comandos sincrónicos  se completen antes
+de  aceptar más  entradas;  los comandos  asíncronos  continúan ejecutándose  en
+paralelo con  el shell  mientras éste  lee y  ejecuta comandos  adicionales. Las
+construcciones de redirección  permiten un control detallado de la  entrada y la
+salida de esos comandos. Además, el  shell permite controlar el contenido de los
+entornos de los comandos.
+
+Los shells  también proporcionan  un pequeño  conjunto de  comandos incorporados
+(builtins)  que  implementan  funcionalidades  imposibles  o  inconvenientes  de
+obtener a  través de utilidades  separadas. Por  ejemplo, cd, break,  continue y
+exec no  pueden implementarse fuera  del shell porque manipulan  directamente el
+propio shell.  Los buildins history, getopts,  kill o pwd, entre  otros, podrían
+implementarse en utilidades separadas, pero  es más conveniente utilizarlos como
+comandos  incorporados.  Todos  los  buildins  del shell  se  describen  en  las
+secciones siguientes.
+
+Aunque la ejecución  de comandos es esencial,  la mayor parte de  la potencia (y
+complejidad) de los  shells se debe a sus lenguajes  de programación integrados.
+Como  cualquier  lenguaje  de  alto   nivel,  el  shell  proporciona  variables,
+construcciones de control de flujo, citas y funciones.
+
+Los shells ofrecen características orientadas específicamente al uso interactivo
+más  que  a   aumentar  el  lenguaje  de   programación.  Estas  características
+interactivas  incluyen  el control  de  trabajos,  la  edición  de la  línea  de
+comandos,  el   historial  de  comandos   y  los   alias.  Cada  una   de  estas
+características se describe en este manual.
