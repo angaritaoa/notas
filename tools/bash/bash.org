@@ -1,12 +1,26 @@
 #+title: Bash
 #+startup: nofold
 
-* Tabla de contenido :TOC_4:
-- [[#qué-es-bash][¿Qué es Bash?]]
-- [[#qué-es-un-shell][¿Qué es un shell?]]
-- [[#definiciones][Definiciones]]
+Este texto es una breve descripción de las características presentes en el shell
+Bash (versión  5.1, 21  de diciembre de  2020). La página  principal de  Bash es
+http://www.gnu.org/software/bash/.
 
-* ¿Qué es Bash?
+Bash contiene características que aparecen  en otros shells populares, y algunas
+características que sólo aparecen en Bash. Algunos de los shells de los que Bash
+ha tomado prestados conceptos  son el Bourne Shell (sh), el  Korn Shell (ksh), y
+el C-shell (csh y su sucesor, tcsh).
+
+Este  manual  pretende   ser  una  breve  introducción   a  las  características
+encontradas  en Bash.  La  página del  manual  de Bash  debería  usarse como  la
+referencia definitiva sobre el comportamiento del shell.
+
+** Tabla de contenido :TOC_4:
+  - [[#qué-es-bash][¿Qué es Bash?]]
+  - [[#qué-es-un-shell][¿Qué es un shell?]]
+  - [[#definiciones][Definiciones]]
+  - [[#características-básicas-de-la-shell][Características básicas de la Shell]]
+
+** ¿Qué es Bash?
 Bash  es el  shell,  o intérprete  del  lenguaje de  comandos,  para el  sistema
 operativo GNU.  El nombre es  un acrónimo de  'Bourne-Again SHell', un  juego de
 palabras con Stephen  Bourne, el autor del ancestro directo  del actual shell de
@@ -25,7 +39,7 @@ bastante portable. Actualmente se ejecuta en  casi todas las versiones de Unix y
 algunos    otros   sistemas    operativos   -    existen   puertos    soportados
 independientemente para las plataformas MS-DOS, OS/2 y Windows.
 
-* ¿Qué es un shell?
+** ¿Qué es un shell?
 En  su  base, un  shell  es  simplemente un  procesador  de  macros que  ejecuta
 comandos. El término  procesador de macros se refiere a  una funcionalidad en la
 que el texto y los símbolos se expanden para crear expresiones más amplias.
@@ -70,7 +84,7 @@ más que a aumentar el lenguaje de programación. Estas características
 interactivas incluyen el control de trabajos, la edición de la línea de
 comandos, el historial de comandos y los alias.
 
-* Definiciones
+** Definiciones
 Estas definiciones se utilizan en el resto de este manual.
 
 - ~POSIX~
@@ -154,3 +168,5 @@ Estas definiciones se utilizan en el resto de este manual.
 - ~word~
   Una secuencia de caracteres tratada como una unidad por el shell. Las palabras
   no pueden incluir metacaracteres no citados.
+
+** Características básicas de la Shell
