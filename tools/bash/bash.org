@@ -1,4 +1,10 @@
 #+title: Bash
+#+startup: nofold
+
+* Tabla de contenido :TOC_4:
+- [[#qué-es-bash][¿Qué es Bash?]]
+- [[#qué-es-un-shell][¿Qué es un shell?]]
+- [[#definiciones][Definiciones]]
 
 * ¿Qué es Bash?
 Bash  es el  shell,  o intérprete  del  lenguaje de  comandos,  para el  sistema
@@ -67,18 +73,27 @@ comandos, el historial de comandos y los alias.
 * Definiciones
 Estas definiciones se utilizan en el resto de este manual.
 
-- =POSIX=
+- ~POSIX~
   Una familia de estándares de sistemas  abiertos basados en Unix. Bash se ocupa
   principalmente de la parte de Shell y Utilidades del estándar POSIX 1003.1.
 
-- =blank=
+- ~blank~
   Un espacio o carácter de tabulación.
 
-- =builtin=
+- ~builtin~
   Un comando que  es implementado internamente por el propio  shell, en lugar de
   por un programa ejecutable en algún lugar del sistema de archivos.
 
-- =control operator=
+- ~control operator~
   Un token que realiza  una función de control. Es una nueva línea  o uno de los
   siguientes:  '=||=', '=&&=',  '=&=',  '=;=', '=;;=',  '=;&=', '=;;&=',  '=|=',
   '=|&=', '=(=', o '=)='.
+
+- ~exit status~
+  El valor devuelto  por un comando a  su llamador. El valor  está restringido a
+  ocho bits, por lo que el valor máximo es 255.
+
+- ~field~
+  Una unidad de texto  que es el resultado de una de  las expansiones del shell.
+  Después de la expansión, cuando se  ejecuta un comando, los campos resultantes
+  se utilizan como el nombre del comando y los argumentos.
