@@ -7,7 +7,11 @@
 - [[#definiciones][Definiciones]]
 
 * ¿Qué es Bash?
-Bash  es el  shell,  o intérprete  del  lenguaje de  comandos,  para el  sistema operativo GNU.  El nombre es  un acrónimo de  'Bourne-Again SHell', un  juego de palabras con Stephen  Bourne, el autor del ancestro directo  del actual shell de Unix sh, que apareció en la séptima  edición de la versión de Bell Labs Research de Unix.
+Bash  es el  shell,  o intérprete  del  lenguaje de  comandos,  para el  sistema
+operativo GNU.  El nombre es  un acrónimo de  'Bourne-Again SHell', un  juego de
+palabras con Stephen  Bourne, el autor del ancestro directo  del actual shell de
+Unix sh, que apareció en la séptima  edición de la versión de Bell Labs Research
+de Unix.
 
 Bash es en gran medida compatible  con sh e incorpora características útiles del
 shell  Korn ksh  y del  shell  C csh.  Se  pretende que  sea una  implementación
