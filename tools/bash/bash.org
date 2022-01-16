@@ -67,15 +67,18 @@ comandos, el historial de comandos y los alias.
 * Definiciones
 Estas definiciones se utilizan en el resto de este manual.
 
-=POSIX= Una familia de estándares de  sistemas abiertos basados en Unix. Bash se
-ocupa  principalmente de  la  parte de  Shell y  Utilidades  del estándar  POSIX
-1003.1.
+- =POSIX=
+  Una familia de estándares de sistemas  abiertos basados en Unix. Bash se ocupa
+  principalmente de la parte de Shell y Utilidades del estándar POSIX 1003.1.
 
-=blank= Un espacio o carácter de tabulación.
+- =blank=
+  Un espacio o carácter de tabulación.
 
-=builtin= Un  comando que es implementado  internamente por el propio  shell, en
-lugar de por un programa ejecutable en algún lugar del sistema de archivos.
+- =builtin=
+  Un comando que  es implementado internamente por el propio  shell, en lugar de
+  por un programa ejecutable en algún lugar del sistema de archivos.
 
-=control operator=  Un token que  realiza una función  de control. Es  una nueva
-línea o  uno de los  siguientes: '=||=',  '=&&=', '=&=', '=;=',  '=;;=', '=;&=',
-'=;;&=', '=|=', '=|&=', '=(=', o '=)='.
+- =control operator=
+  Un token que realiza  una función de control. Es una nueva línea  o uno de los
+  siguientes:  '=||=', '=&&=',  '=&=',  '=;=', '=;;=',  '=;&=', '=;;&=',  '=|=',
+  '=|&=', '=(=', o '=)='.
