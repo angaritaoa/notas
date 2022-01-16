@@ -97,3 +97,60 @@ Estas definiciones se utilizan en el resto de este manual.
   Una unidad de texto  que es el resultado de una de  las expansiones del shell.
   Después de la expansión, cuando se  ejecuta un comando, los campos resultantes
   se utilizan como el nombre del comando y los argumentos.
+
+- ~filename~
+  Cadena de caracteres utilizada para identificar un archivo.
+
+- ~job~
+  Conjunto  de  procesos que  componen  un  pipeline,  y cualquier  proceso  que
+  descienda de él, que están todos en el mismo grupo de procesos.
+
+- ~job control~
+  Un  mecanismo mediante  el  cual  los usuarios  pueden  detener (suspender)  y
+  reiniciar (reanudar) selectivamente la ejecución de procesos.
+
+- ~metacharacter~
+  Un  carácter  que,  cuando  no   está  entre  comillas,  separa  palabras.  Un
+  metacarácter  es un  espacio,  un tabulador,  una  nueva línea  o  uno de  los
+  siguientes caracteres: '=|=', '=&=', '=;=', '=(=', '=)=', '=<=' o '=>='.
+
+- ~name~
+  Una palabra  formada únicamente  por letras,  números y  guiones bajos,  y que
+  comienza con una letra  o un guión bajo. Los nombres  se utilizan como nombres
+  de variables y funciones del shell. También se denomina identificador.
+
+- ~operator~
+  Un operador de control o de  redirección. Ver Redirecciones, para una lista de
+  operadores de redirección.  Los operadores contienen al  menos un metacarácter
+  no citado.
+
+- ~process group~
+  Una colección de procesos  relacionados, cada uno con el mismo  ID de grupo de
+  procesos.
+
+- ~process group ID~
+  Un identificador único que representa a un grupo de procesos durante su vida.
+
+- ~reserved word~
+  Una palabra que tiene un significado especial para el shell. La mayoría de las
+  palabras reservadas introducen  construcciones de control de  flujo del shell,
+  como for y while.
+
+- ~return status~
+  Un sinónimo de estado de salida.
+
+- ~signal~
+  Un mecanismo por el  cual un proceso puede ser notificado por  el núcleo de un
+  evento que ocurre en el sistema.
+
+- ~special builtin~
+  Un comando incorporado  al shell que ha sido clasificado  como especial por el
+  estándar POSIX.
+
+- ~token~
+  Una secuencia de caracteres considerada como  una sola unidad por el shell. Es
+  una palabra o un operador.
+
+- ~word~
+  Una secuencia de caracteres tratada como una unidad por el shell. Las palabras
+  no pueden incluir metacaracteres no citados.
