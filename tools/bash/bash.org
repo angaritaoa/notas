@@ -19,6 +19,8 @@ referencia definitiva sobre el comportamiento del shell.
   - [[#qué-es-un-shell][¿Qué es un shell?]]
   - [[#definiciones][Definiciones]]
   - [[#características-básicas-de-la-shell][Características básicas de la Shell]]
+    - [[#sintaxis-del-shell][Sintaxis del shell]]
+      - [[#funcionamiento-del-shell][Funcionamiento del shell]]
 
 ** ¿Qué es Bash?
 Bash  es el  shell,  o intérprete  del  lenguaje de  comandos,  para el  sistema
@@ -170,3 +172,44 @@ Estas definiciones se utilizan en el resto de este manual.
   no pueden incluir metacaracteres no citados.
 
 ** Características básicas de la Shell
+Este  capítulo  resume  brevemente  los "bloques  de  construcción"  del  shell:
+comandos, estructuras  de control,  funciones del  shell, parámetros  del shell,
+expansiones del shell, redirecciones, que son  una forma de dirigir la entrada y
+la  salida desde  y hacia  archivos  con nombre,  y  cómo el  shell ejecuta  los
+comandos.
+
+*** Sintaxis del shell
+Cuando  el  shell  lee  la  entrada,  procede  a  través  de  una  secuencia  de
+operaciones. Si la entrada indica el  comienzo de un comentario, el shell ignora
+el símbolo de comentario ('#'), y el resto de esa línea.
+
+De lo contrario, a grandes rasgos, el intérprete de comandos lee su entrada y la
+divide  en  palabras  y  operadores,  empleando  las  reglas  de  citación  para
+seleccionar qué significados asignar a las distintas palabras y caracteres.
+
+A   continuación,  el   shell  analiza   estos  tokens   en  comandos   y  otras
+construcciones,  elimina   el  significado   especial  de  ciertas   palabras  o
+caracteres, expande otros, redirige la entrada  y la salida según sea necesario,
+ejecuta el comando especificado, espera el  estado de salida del comando, y hace
+que  ese  estado de  salida  esté  disponible  para  su posterior  inspección  o
+procesamiento.
+
+**** Funcionamiento del shell
+A continuación se  describe brevemente el funcionamiento del shell  cuando lee y
+ejecuta un comando. Básicamente, el shell hace lo siguiente:
+
+1. Lee  su entrada desde  un archivo (ver Scripts  del Shell), desde  una cadena
+   suministrada como argumento  a la opción de invocación -c  (ver Invocación de
+   Bash), o desde la terminal del usuario.
+2. Rompe la entrada en palabras y operadores, obedeciendo las reglas de citación
+   descritas  en Citar.  Estos  tokens están  separados  por metacaracteres.  La
+   expansión de los alias se realiza en este paso (ver Aliases).
+3. Analiza los tokens en comandos simples y compuestos (ver Comandos del Shell).
+4. Realiza  las diferentes  expansiones del shell  (ver Expansiones  del Shell),
+   dividiendo  los tokens  expandidos  en  listas de  nombres  de archivos  (ver
+   Expansión de nombres de archivos) y comandos y argumentos.
+5. Realiza  las redirecciones  necesarias  (ver  Redirecciones) y  elimina  los
+   operadores de redirección y sus operandos de la lista de argumentos.
+6. Ejecuta el comando (véase Ejecución de comandos).
+7. Opcionalmente,  espera a  que el comando  se complete y  recoge su  estado de
+   salida (ver Estado de salida).
