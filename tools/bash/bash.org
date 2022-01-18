@@ -21,6 +21,7 @@ referencia definitiva sobre el comportamiento del shell.
   - [[#características-básicas-de-la-shell][Características básicas de la Shell]]
     - [[#sintaxis-del-shell][Sintaxis del shell]]
       - [[#funcionamiento-del-shell][Funcionamiento del shell]]
+      - [[#citando][Citando]]
 
 ** ¿Qué es Bash?
 Bash  es el  shell,  o intérprete  del  lenguaje de  comandos,  para el  sistema
@@ -213,3 +214,129 @@ ejecuta un comando. Básicamente, el shell hace lo siguiente:
 6. Ejecuta el comando (véase Ejecución de comandos).
 7. Opcionalmente,  espera a  que el comando  se complete y  recoge su  estado de
    salida (ver Estado de salida).
+
+**** Citando
+La  citación  se  utiliza  para  eliminar el  significado  especial  de  ciertos
+caracteres o palabras para el shell. Las citas pueden utilizarse para desactivar
+el  tratamiento especial  de  los  caracteres especiales,  para  evitar que  las
+palabras reservadas sean  reconocidas como tales y para impedir  la expansión de
+parámetros.
+
+Cada uno de los metacaracteres del shell (ver Definiciones) tiene un significado
+especial para  el shell  y debe ser  entrecomillado si va  a representarse  a sí
+mismo. Cuando se utilizan las facilidades de expansión del historial de comandos
+(ver  Interacción con  el historial),  el carácter  de expansión  del historial,
+normalmente '!',  debe entrecomillarse para  evitar la expansión  del historial.
+Ver Facilidades de Historia de Bash, para  más detalles sobre la expansión de la
+historia.
+
+Existen tres mecanismos  de entrecomillado: el carácter de  escape, las comillas
+simples y las comillas dobles.
+
+***** Carácter de escape
+Una barra invertida no citada '\' es  el carácter de escape de Bash. Conserva el
+valor literal  del siguiente carácter,  con la excepción  de la nueva  línea. Si
+aparece un par \newline, y la propia  barra invertida no está entre comillas, el
+\newline se trata como una continuación de línea (es decir, se elimina del flujo
+de entrada y se ignora efectivamente).
+
+***** Comillas simples
+Al encerrar  los caracteres entre  comillas simples  (''') se conserva  el valor
+literal de cada carácter dentro de  las comillas. Las comillas simples no pueden
+aparecer entre comillas simples, ni siquiera  cuando van precedidas de una barra
+invertida.
+
+***** Comillas dobles
+Encerrar caracteres  entre comillas  dobles ('"') preserva  el valor  literal de
+todos los caracteres dentro de las comillas,  con la excepción de '$', '`', '\',
+y, cuando la expansión del historial  está habilitada, '!'. Cuando el shell está
+en modo POSIX (ver Modo POSIX de  Bash), el carácter '!' no tiene un significado
+especial  dentro  de  las  comillas  dobles, incluso  cuando  la  expansión  del
+historial  está activada.  Los caracteres  '$'  y '`'  mantienen su  significado
+especial dentro  de las comillas  dobles (ver  Expansiones del shell).  La barra
+invertida conserva su significado especial sólo  cuando va seguida de uno de los
+siguientes caracteres: '$', '`', '"', '\', o línea nueva. Dentro de las comillas
+dobles, las  barras invertidas que  van seguidas de  uno de estos  caracteres se
+eliminan. Las  barras invertidas  que preceden a  caracteres sin  un significado
+especial se  dejan sin modificar. Una  comilla doble puede ser  citada dentro de
+comillas dobles precediéndola de una barra invertida. Si se activa, la expansión
+del historial se realizará a menos que un '!' que aparezca entre comillas dobles
+se escape con una  barra invertida. La barra invertida que precede  al '!' no se
+elimina.
+
+Los parámetros especiales '*' y '@'  tienen un significado especial cuando están
+entre comillas dobles (véase Expansión de parámetros de la shell).
+
+***** Citas ANSI-C
+Las palabras de  la forma $'string' se  tratan de forma especial.  La palabra se
+expande  a cadena,  con  caracteres  de barra  invertida  reemplazados según  lo
+especificado  por  el  estándar  ANSI  C. Las  secuencias  de  escape  de  barra
+invertida, si están presentes, se decodifican como sigue:
+
+- ~\a~
+  alerta (campana)
+
+- ~\b~
+  retroceso
+
+- ~\e~
+- ~\E~
+  un carácter de escape (no ANSI C)
+
+- ~\f~
+  alimentación de forma
+
+- ~\n~
+  línea nueva
+
+- ~\r~
+  retorno de carro
+
+- ~\t~
+  tabulación horizontal
+
+- ~\v~
+  tabulación vertical
+
+- ~\\~
+  barra invertida
+
+- ~\'~
+  comilla simple
+
+- ~\"~ comillas dobles
+
+- ~\?~
+  signo de interrogación
+
+- ~\nnn~
+  el carácter  de ocho  bits cuyo valor  es el  valor octal nnn  (de uno  a tres
+  dígitos octales)
+
+- ~\xHH~
+  el carácter  de ocho bits  cuyo valor  es el valor  hexadecimal HH (uno  o dos
+  dígitos hexadecimales)
+
+- ~\uHHHH~
+  el carácter  Unicode (ISO/IEC 10646) cuyo  valor es el valor  hexadecimal HHHH
+  (de uno a cuatro dígitos hexadecimales)
+- ~\UHHHHHHHH~
+  el  carácter  Unicode (ISO/IEC  10646)  cuyo  valor  es el  valor  hexadecimal
+  HHHHHHHH (de uno a ocho dígitos hexadecimales)
+
+- ~\cx~
+  un carácter de control-x
+
+El resultado expandido está entre comillas simples, como si el signo de dólar no
+hubiera estado presente.
+
+***** Comentarios
+En un  intérprete de  comandos no  interactivo, o en  un intérprete  de comandos
+interactivo  en  el  que  esté   activada  la  opción  interactive_comments  del
+complemento shopt (véase El complemento shopt),  una palabra que empiece por '#'
+hace que se ignore esa palabra y todos los caracteres restantes de esa línea. Un
+shell  interactivo  sin  la  opción  interactive_comments  activada  no  permite
+comentarios. La  opción interactive_comments  está activada  por defecto  en los
+shells interactivos. Consulte la sección de intérpretes de comandos interactivos
+para obtener una  descripción de lo que  hace que un intérprete  de comandos sea
+interactivo.
