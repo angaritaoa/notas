@@ -279,8 +279,7 @@ invertida, si están presentes, se decodifican como sigue:
 - ~\b~
   retroceso
 
-- ~\e~
-- ~\E~
+- ~\e~, ~\E~
   un carácter de escape (no ANSI C)
 
 - ~\f~
@@ -301,7 +300,7 @@ invertida, si están presentes, se decodifican como sigue:
 - ~\\~
   barra invertida
 
-- ~\'~
+- =\'=
   comilla simple
 
 - ~\"~ comillas dobles
