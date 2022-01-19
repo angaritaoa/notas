@@ -2,7 +2,6 @@
 #+startup: nofold
 
 * Install
-
 #+begin_src bash
 sudo dnf install git emacs ripgrep fd-find ShellCheck marked
 git clone https://github.com/hlissner/doom-emacs ~/.emacs.d
@@ -14,29 +13,46 @@ Agregar =~/.emacs.d/bin= al ~PATH~. ~export PATH=$HOME/.emacs.d/bin:$PATH~
 #+end_quote
 
 ** La utilidad ~bin/doom~
+Esta utilidad  va a cargar con  gran parte del  trabajo asociado a la  gestión y
+mantenimiento de tu configuración de Doom Emacs, y algo más.
 
-Esta utilidad va a cargar con gran parte del trabajo asociado a la gestión y mantenimiento de tu configuración de Doom Emacs, y algo más.
++ ~doom sync~: Esto sincroniza la  configuración con Doom Emacs. Asegura que los
+  paquetes  necesarios se  instalen, los  paquetes huérfanos  se eliminen  y los
+  metadatos necesarios se  generen correctamente. Ejecutar esto cada  vez que se
+  modifique el bloque ~doom!~ o el archivo =packages.el=.
++ ~doom upgrade~: Actualiza Doom Emacs (si está disponible) y todos sus
+  paquetes.
++ ~doom env~: (Re)genera un "archivo envvar", que es una instantánea de tu
+  entorno de shell que Doom carga al inicio. Si tu lanzador de aplicaciones o tu
+  sistema operativo lanza Emacs en un entorno equivocado, necesitarás esto. Esto
+  es necesario para los usuarios de GUI Emacs en MacOS.
++ ~doom doctor~: Si Doom se comporta mal, doom doctor diagnosticará problemas
+  comunes con su instalación, sistema y entorno.
++ ~doom purge~: Con el tiempo, los repositorios de los plugins de Doom se
+  acumulan. Ejecute  este comando de  vez en  cuando para eliminar  los paquetes
+  viejos y  huérfanos, y con la  opción ~-g~ para compactar  los repositorios de
+  paquetes existentes.
 
-+ ~doom sync~: Esto sincroniza la configuración con Doom Emacs. Asegura que los paquetes necesarios se instalen, los paquetes huérfanos se eliminen y los metadatos necesarios se generen correctamente. Ejecutar esto cada vez que se modifique el bloque ~doom!~ o el archivo ~packages.el~.
-+ ~doom upgrade~: Actualiza Doom Emacs (si está disponible) y todos sus paquetes.
-+ ~doom env~: (Re)genera un "archivo envvar", que es una instantánea de tu entorno de shell que Doom carga al inicio. Si tu lanzador de aplicaciones o tu sistema operativo lanza Emacs en un entorno equivocado, necesitarás esto. **Esto es necesario para los usuarios de GUI Emacs en MacOS.
-+ ~doom doctor~: Si Doom se comporta mal, el doctor diagnosticará problemas comunes con su instalación, sistema y entorno.
-+ ~doom purge~: Con el tiempo, los repositorios de los plugins de Doom se acumulan. Ejecute este comando de vez en cuando para eliminar los paquetes viejos y huérfanos, y con la opción ~-g~ para compactar los repositorios de paquetes existentes.
-
-Utilizar ~doom help~ para ver un resumen de los comandos disponibles que proporciona ~doom~, y ~doom help COMMAND~ para mostrar la documentación de un ~COMMAND~
+Utilizar  ~doom help~  para  ver  un resumen  de  los  comandos disponibles  que
+proporciona =doom=,  y ~doom help COMMAND~  para mostrar la documentación  de un
+~COMMAND~
 
 * Dependencias externas
+Doom  se   compone  de   aproximadamente  160   módulos  que   proporcionan  sus
+características, soporte  de lenguaje  e integración con  herramientas externas.
+Muchos  de ellos  tienen  dependencias  externas que  debes  instalar tú  mismo.
+Encontrarás lo que necesita un módulo y cómo instalarlo en el archivo README.org
+de ese módulo o ejecutando ~bin/doom doctor~.
 
-Doom se compone de aproximadamente 160 módulos que proporcionan sus características, soporte de lenguaje e integración con herramientas externas. Muchos de ellos tienen dependencias externas que debes instalar tú mismo. Encontrarás lo que necesita un módulo y cómo instalarlo en el archivo README.org de ese módulo o ejecutando ~bin/doom doctor~.
-
-El [[https://github.com/hlissner/doom-emacs/blob/develop/docs/modules.org][índice de módulos]] lista todos los módulos disponibles de Doom, con enlaces a su documentación. La documentación es un trabajo en progreso; ¡algunos módulos pueden no tener archivos README.org todavía!
+El [[https://github.com/hlissner/doom-emacs/blob/develop/docs/modules.org][índice de módulos]] lista todos los  módulos disponibles de Doom, con enlaces a
+su documentación. La  documentación es un trabajo en  progreso; ¡algunos módulos
+pueden no tener archivos README.org todavía!
 
 #+begin_quote
 Utilizar ~M-x doom/help-modules~ para saltar a la documentación de un módulo desde Doom
 #+end_quote
 
 * Update y Rollback
-
 #+begin_src bash
 doom upgrade   # or 'doom up'
 #+end_src
