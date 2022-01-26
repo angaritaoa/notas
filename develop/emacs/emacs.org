@@ -125,3 +125,7 @@ activará.
 #+end_quote
 
 * Modules
+Doom consta  de unos  160 módulos  y sigue creciendo.  Un módulo  de Doom  es un
+conjunto de  paquetes, configuración y  comandos, organizados en una  unidad que
+puede ser cambiada  fácilmente ajustando su bloque ~doom!~ (que  se encuentra en
+=$DOOMDIR/init.el=).
