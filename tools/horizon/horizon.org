@@ -1,0 +1,17 @@
+#+title: VMware-Horizon Client
+#+startup: nofold
+
+El instalador para VMware horizonte utiliza  el sistema python, pero utiliza una
+característica obsoleta  ~collections.Callable~ que fue totalmente  eliminado en
+Python3.10. Esto hace  que el instalador falle inmediatamente con  el mensaje de
+error "installation was  unsuccessfull". Mirando en el archivo  de registro, que
+se encuentra en ~/var/vmware-root/~ (ordenar por  fecha para ver la más reciente),
+se ve el mensaje de error real:
+
+Esto se puede resolver fácilmente:
+
+1. Instalar el entorno python3.9: =$ sudo dnf install python3.9=
+2. Crear un virtualenv de python3.9: =$ python3.9 -m venv env=
+3. Convertirse en root: =$ sudo -s=
+4. Cargar el virtualenv: =$ source env/bin/activate=
+5. Ejecuta el instalador como root =./VMware-Horizon-Client-2106.1-8.3.1-18435609.x64.bundle=
