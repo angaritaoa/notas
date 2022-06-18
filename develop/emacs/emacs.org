@@ -9,7 +9,7 @@ git clone https://github.com/hlissner/doom-emacs ~/.emacs.d
 #+end_src
 
 #+begin_quote
-Agregar =~/.emacs.d/bin= al ~PATH~. ~export PATH=$HOME/.emacs.d/bin:$PATH~
+Agregar =~/.emacs.d/bin= al ~PATH~. ~export PATH=~/.emacs.d/bin:$PATH~
 #+end_quote
 
 ** La utilidad ~bin/doom~
