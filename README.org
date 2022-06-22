@@ -2,8 +2,9 @@
 #+startup: nofold
 
 * Develop
-- [[file:develop/emacs/emacs.org][Emacs]]
+- [[file:develop/emacs/emacs.org][Doom Emacs]]
 - [[file:develop/git/git.org][Git]]
 * Tools
-- [[file:tools/terminator/terminator.org][Terminator]]
 - [[file:tools/bash/bash.org][Bash]]
+- [[file:tools/terminator/terminator.org][Terminator]]
+- [[file:tools/horizon/horizon.org][VMware Horizon Client]]
