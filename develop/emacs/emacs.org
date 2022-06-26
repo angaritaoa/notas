@@ -1,10 +1,25 @@
 #+title: Mi configuración personalizada de Doom Emacs
 #+startup: nofold
 
+* Tabla de Contenido :TOC:
+- [[#install][Install]]
+  - [[#la-utilidad-bindoom][La utilidad ~bin/doom~]]
+- [[#dependencias-externas][Dependencias externas]]
+- [[#update-y-rollback][Update y Rollback]]
+- [[#rollback][Rollback]]
+- [[#configure][Configure]]
+  - [[#modules][Modules]]
+- [[#configuración-de-doom][Configuración de Doom]]
+  - [[#configuración-de-paquetes][Configuración de paquetes]]
+- [[#solucionar-problemas][Solucionar problemas]]
+- [[#búsqueda-de-documentación-y-estado-desde-emacs][Búsqueda de documentación y estado desde Emacs]]
+  - [[#variables-functions-faces-etc][Variables, functions, faces, etc.]]
+  - [[#doom-modules-packages-autodefs-etc][Doom Modules, packages, autodefs, etc.]]
+
 * Install
 #+begin_src bash
-sudo dnf install git emacs ripgrep fd-find ShellCheck marked
-git clone https://github.com/hlissner/doom-emacs ~/.emacs.d
+sudo dnf install emacs git ripgrep fd-find ShellCheck
+git clone https://github.com/doomemacs/doomemacs ~/.emacs.d
 ~/.emacs.d/bin/doom install
 #+end_src
 
@@ -49,7 +64,9 @@ su documentación. La  documentación es un trabajo en  progreso; ¡algunos mód
 pueden no tener archivos README.org todavía!
 
 #+begin_quote
-Utilizar ~M-x doom/help-modules~ para saltar a la documentación de un módulo desde Doom
+Utilizar ~M-x doom/help-modules~ para saltar a la documentación de un módulo
+desde Doom, de lo contrario, coloque el cursor en un módulo de su bloque =doom!=
+(en ~~/.doom.d/init.el~) y pulse =K= para saltar a su documentación.
 #+end_quote
 
 * Update y Rollback
@@ -124,8 +141,140 @@ Si te  preocupan los =defcustom= setters,  Doom tiene una macro  =setq!= que los
 activará.
 #+end_quote
 
-* Modules
+** Modules
 Doom consta  de unos  160 módulos  y sigue creciendo.  Un módulo  de Doom  es un
 conjunto de  paquetes, configuración y  comandos, organizados en una  unidad que
 puede ser cambiada  fácilmente ajustando su bloque ~doom!~ (que  se encuentra en
 =$DOOMDIR/init.el=).
+
+Tu bloque de doom! debería tener el siguiente aspecto:
+
+#+begin_src emacs-lisp
+;; To comment something out, you insert at least one semicolon before it and the
+;; Emacs Lisp interpreter will ignore everything until the end of the line.
+(doom! :lang
+       python        ; this module is not commented, therefore enabled
+       ;;javascript  ; this module is commented out, therefore disabled
+       ;;lua         ; this module is disabled
+       ruby          ; this module is enabled
+       php)          ; this module is enabled
+#+end_src
+
+Controla qué módulos se activan y en qué orden se cargan. Algunos módulos tienen
+*características opcionales* que pueden ser activadas pasándoles banderas,
+denotadas por un prefijo plus:
+
+#+begin_src emacs-lisp
+(doom! :completion
+       (company +childframe)
+       :lang
+       (csharp +unity)
+       (org +brain +dragndrop +gnuplot +hugo +jupyter)
+       (sh +fish))
+#+end_src
+
+Los distintos módulos admiten diferentes banderas. Encontrará una lista completa
+de los módulos disponibles y sus banderas soportadas en el [[https://github.com/doomemacs/doomemacs/blob/master/docs/modules.org][Índice de Módulos]].
+Las banderas que un módulo no reconoce serán ignoradas silenciosamente.
+
+* Configuración de Doom
+** Configuración de paquetes
+Si sus necesidades de configuración son simples, las macros ~use-package!~,
+~after!~, ~add-hook!~ y ~setq-hook!~ son su pan de cada día.
+
+#+begin_src emacs-lisp
+;;; ~/.doom.d/config.el (example)
+(setq doom-font (font-spec :family "Fira Mono" :size 12))
+
+;; Takes a feature symbol or a library name (string)
+(after! evil
+  (setq evil-magic nil))
+
+;; Takes a major-mode, a quoted hook function or a list of either
+(add-hook! python-mode
+  (setq python-shell-interpreter "bpython"))
+
+;; These are equivalent
+(setq-hook! 'python-mode-hook python-indent-offset 2)
+(setq-hook! python-mode python-indent-offset 2)
+
+(use-package! hl-todo
+  ;; if you omit :defer, :hook, :commands, or :after, then the package is loaded
+  ;; immediately. By using :hook here, the `hl-todo` package won't be loaded
+  ;; until prog-mode-hook is triggered (by activating a major mode derived from
+  ;; it, e.g. python-mode)
+  :hook (prog-mode . hl-todo-mode)
+  :init
+  ;; code here will run immediately
+  :config
+  ;; code here will run after the package is loaded
+  (setq hl-todo-highlight-punctuation ":"))
+#+end_src
+
+* Solucionar problemas
+Cuando surgen problemas, debes estar preparado para recoger información para
+resolverlos, o para el informe de error que vas a escribir. Tanto Emacs como
+Doom proporcionan herramientas para hacer esto más fácil. Aquí hay algunas cosas
+que puedes probar, primero:
+
++ Investigue el registro =*Mensajes*= para ver si hay advertencias o mensajes de
+  error. Este registro se puede abrir con =SPC h e=, =C-h e= o =M-x view-echo-area-messages=.
+
++ Busca los errores/advertencias en el FAQ y en el [[https://github.com/hlissner/doom-emacs/issues][Domm's issue tracker]]. Es
+  posible que ya exista una solución para su problema. El FAQ se puede buscar
+  desde dentro de Doom con =SPC h d f= (o =C-h d f= para los usuarios que no son
+  malvados).
+
++ Ejecute ~bin/doom doctor~ en la línea de comandos para diagnosticar problemas
+  comunes con su entorno y configuración. También sugerirá soluciones para
+  ellos.
+
++ ~bin/doom clean~ se asegurará de que el problema no es un código de bytes
+  antiguo en su configuración privada o en el núcleo de Doom. Si no has usado
+  ~bin/doom compile~, no hay necesidad de hacer esto.
+
++ ~bin/doom sync~ se asegurará de que el problema no es que falten paquetes o
+  que los archivos autoloads estén obsoletos
+
++ ~bin/doom build~ se asegurará de que el problema no sea el código de bytes del
+  paquete antiguo o los enlaces simbólicos rotos.
+
++ ~bin/doom update~ se asegurará de que sus paquetes estén actualizados,
+  eliminando los problemas que se originan en el upstream.
+
++ Si sabe qué módulo(s) es(son) relevante(s) para su problema, compruebe su
+  documentación (pulse ~SPC h d m~ para saltar a la documentación de un módulo).
+  Su problema puede estar documentado.
+
+* Búsqueda de documentación y estado desde Emacs
+** Variables, functions, faces, etc.
+Emacs es un intérprete de Lisp a cuyo estado puedes acceder sobre la marcha con
+las herramientas que te proporciona el propio Emacs. Están disponibles en el
+prefijo ~SPC h~ por defecto. Utilízalas para depurar tus sesiones.
+
+He aquí algunas de las más importantes:
+
++ ~describe-variable~ (=SPC h v=)
++ ~describe-function~ (=SPC h f=)
++ ~describe-face~ (=SPC h F=)
++ ~describe-bindings~ (=SPC h b=)
++ ~describe-key~ (=SPC h k=)
++ ~describe-char~ (=SPC h '=)
++ ~find-library~ (=SPC h P=)
+
+** Doom Modules, packages, autodefs, etc.
++ ~doom/open-news~ (~SPC h n~) ::
+    ...
++ ~doom/help~ (=SPC h d h=) ::
+  Abre el índice del manual de Doom.
++ ~doom/help-modules~ (=SPC h d m=) ::
+  Salta a la documentación de un módulo.
++ ~doom/help-autodefs~ (=SPC h u=) ::
+  Salta a la documentación de una función/macro autodef. Se trata de funciones
+  especiales que siempre están definidas, independientemente de que sus módulos
+  contenedores estén habilitados o no.
++ ~doom/help-packages~ (=SPC h p=) ::
+  Busque los paquetes que están instalados, por quién (qué módulos) y dónde
+  saltar a todos los lugares que se está configurando.
++ ~doom/info~ ::
+    ...
