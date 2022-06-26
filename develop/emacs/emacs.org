@@ -1,4 +1,4 @@
-#+title: Mi configuración personalizada de Doom Emacs
+#+title: Doom Emacs
 #+startup: nofold
 
 * Tabla de Contenido :TOC:
