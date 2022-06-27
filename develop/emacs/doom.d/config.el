@@ -76,3 +76,39 @@
 ;; they are implemented.
 
 (setq projectile-project-search-path '("/mnt/archivos/projects/"))
+
+(after! org
+  (map! :map org-mode-map
+        :n "M-j" #'org-metadown
+        :n "M-k" #'org-metaup)
+  (set-face-attribute 'org-level-1 nil
+                      :height 1.25
+                      :weight 'normal)
+  (set-face-attribute 'org-level-2 nil
+                      :height 1.0
+                      :weight 'normal)
+  (set-face-attribute 'org-level-3 nil
+                      :height 1.0
+                      :weight 'normal)
+  (set-face-attribute 'org-level-4 nil
+                      :height 1.0
+                      :weight 'normal)
+  (set-face-attribute 'org-level-5 nil
+                      :weight 'normal)
+  (set-face-attribute 'org-level-6 nil
+                      :weight 'normal)
+  (set-face-attribute 'org-document-title nil
+                      :height 1.25
+                      :weight 'bold)
+  (setq org-startup-folded nil
+        org-startup-indented t
+        org-pretty-entities t
+        org-hide-emphasis-markers t
+        org-startup-with-inline-images t
+        org-image-actual-width '(300)
+        org-superstar-headline-bullets-list '("◉")
+        org-superstar-item-bullet-alist '((?+ . ?✸)
+                                          (?* . ?✸)
+                                          (?- . ?✸))
+        org-ellipsis " ... "
+        org-indent-indentation-per-level 2))
