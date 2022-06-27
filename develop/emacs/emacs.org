@@ -18,9 +18,9 @@
 
 * Install
 #+begin_src bash
-sudo dnf install emacs git ripgrep fd-find ShellCheck
-git clone https://github.com/doomemacs/doomemacs ~/.emacs.d
-~/.emacs.d/bin/doom install
+git clone git@github.com:angaritaoa/notas.git
+cd notas/develop/emacs
+make
 #+end_src
 
 #+begin_quote
@@ -107,7 +107,7 @@ Puede  configurar  Doom  modificando  los  archivos  que  se  encuentran  en  su
 rutas:
 
 1. =~/.config/doom= (respects ~$XDG_CONFIG_HOME~)
-2. =~./doom.d=
+2. =~/.doom.d=
 
 Este  directorio  se  denomina  =DOOMDIR=.   Sólo  debe  existir  uno  de  estos
 directorios (Doom sólo reconocerá uno).
