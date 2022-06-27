@@ -1,5 +1,4 @@
 #+title: Bash
-#+startup: nofold
 
 Este texto es una breve descripción de las características presentes en el shell
 Bash (versión  5.1, 21  de diciembre de  2020). La página  principal de  Bash es
