@@ -23,6 +23,7 @@ referencia definitiva sobre el comportamiento del shell.
       - [[#citando][Citando]]
 
 ** ¿Qué es Bash?
+
 Bash  es el  shell,  o intérprete  del  lenguaje de  comandos,  para el  sistema
 operativo GNU.  El nombre es  un acrónimo de  'Bourne-Again SHell', un  juego de
 palabras con Stephen  Bourne, el autor del ancestro directo  del actual shell de
@@ -42,6 +43,7 @@ algunos    otros   sistemas    operativos   -    existen   puertos    soportados
 independientemente para las plataformas MS-DOS, OS/2 y Windows.
 
 ** ¿Qué es un shell?
+
 En  su  base, un  shell  es  simplemente un  procesador  de  macros que  ejecuta
 comandos. El término  procesador de macros se refiere a  una funcionalidad en la
 que el texto y los símbolos se expanden para crear expresiones más amplias.
@@ -87,91 +89,74 @@ interactivas incluyen el control de trabajos, la edición de la línea de
 comandos, el historial de comandos y los alias.
 
 ** Definiciones
+
 Estas definiciones se utilizan en el resto de este manual.
 
 - ~POSIX~
   Una familia de estándares de sistemas  abiertos basados en Unix. Bash se ocupa
   principalmente de la parte de Shell y Utilidades del estándar POSIX 1003.1.
-
 - ~blank~
   Un espacio o carácter de tabulación.
-
 - ~builtin~
   Un comando que  es implementado internamente por el propio  shell, en lugar de
   por un programa ejecutable en algún lugar del sistema de archivos.
-
 - ~control operator~
   Un token que realiza  una función de control. Es una nueva línea  o uno de los
   siguientes:  '=||=', '=&&=',  '=&=',  '=;=', '=;;=',  '=;&=', '=;;&=',  '=|=',
   '=|&=', '=(=', o '=)='.
-
 - ~exit status~
   El valor devuelto  por un comando a  su llamador. El valor  está restringido a
   ocho bits, por lo que el valor máximo es 255.
-
 - ~field~
   Una unidad de texto  que es el resultado de una de  las expansiones del shell.
   Después de la expansión, cuando se  ejecuta un comando, los campos resultantes
   se utilizan como el nombre del comando y los argumentos.
-
 - ~filename~
   Cadena de caracteres utilizada para identificar un archivo.
-
 - ~job~
   Conjunto  de  procesos que  componen  un  pipeline,  y cualquier  proceso  que
   descienda de él, que están todos en el mismo grupo de procesos.
-
 - ~job control~
   Un  mecanismo mediante  el  cual  los usuarios  pueden  detener (suspender)  y
   reiniciar (reanudar) selectivamente la ejecución de procesos.
-
 - ~metacharacter~
   Un  carácter  que,  cuando  no   está  entre  comillas,  separa  palabras.  Un
   metacarácter  es un  espacio,  un tabulador,  una  nueva línea  o  uno de  los
   siguientes caracteres: '=|=', '=&=', '=;=', '=(=', '=)=', '=<=' o '=>='.
-
 - ~name~
   Una palabra  formada únicamente  por letras,  números y  guiones bajos,  y que
   comienza con una letra  o un guión bajo. Los nombres  se utilizan como nombres
   de variables y funciones del shell. También se denomina identificador.
-
 - ~operator~
   Un operador de control o de  redirección. Ver Redirecciones, para una lista de
   operadores de redirección.  Los operadores contienen al  menos un metacarácter
   no citado.
-
 - ~process group~
   Una colección de procesos  relacionados, cada uno con el mismo  ID de grupo de
   procesos.
-
 - ~process group ID~
   Un identificador único que representa a un grupo de procesos durante su vida.
-
 - ~reserved word~
   Una palabra que tiene un significado especial para el shell. La mayoría de las
   palabras reservadas introducen  construcciones de control de  flujo del shell,
   como for y while.
-
 - ~return status~
   Un sinónimo de estado de salida.
-
 - ~signal~
   Un mecanismo por el  cual un proceso puede ser notificado por  el núcleo de un
   evento que ocurre en el sistema.
-
 - ~special builtin~
   Un comando incorporado  al shell que ha sido clasificado  como especial por el
   estándar POSIX.
-
 - ~token~
   Una secuencia de caracteres considerada como  una sola unidad por el shell. Es
   una palabra o un operador.
-
 - ~word~
   Una secuencia de caracteres tratada como una unidad por el shell. Las palabras
   no pueden incluir metacaracteres no citados.
 
 ** Características básicas de la Shell
+
 Este  capítulo  resume  brevemente  los "bloques  de  construcción"  del  shell:
 comandos, estructuras  de control,  funciones del  shell, parámetros  del shell,
 expansiones del shell, redirecciones, que son  una forma de dirigir la entrada y
@@ -179,6 +164,7 @@ la  salida desde  y hacia  archivos  con nombre,  y  cómo el  shell ejecuta  lo
 comandos.
 
 *** Sintaxis del shell
+
 Cuando  el  shell  lee  la  entrada,  procede  a  través  de  una  secuencia  de
 operaciones. Si la entrada indica el  comienzo de un comentario, el shell ignora
 el símbolo de comentario ('#'), y el resto de esa línea.
@@ -195,6 +181,7 @@ que  ese  estado de  salida  esté  disponible  para  su posterior  inspección 
 procesamiento.
 
 **** Funcionamiento del shell
+
 A continuación se  describe brevemente el funcionamiento del shell  cuando lee y
 ejecuta un comando. Básicamente, el shell hace lo siguiente:
 
@@ -215,6 +202,7 @@ ejecuta un comando. Básicamente, el shell hace lo siguiente:
    salida (ver Estado de salida).
 
 **** Citando
+
 La  citación  se  utiliza  para  eliminar el  significado  especial  de  ciertos
 caracteres o palabras para el shell. Las citas pueden utilizarse para desactivar
 el  tratamiento especial  de  los  caracteres especiales,  para  evitar que  las
@@ -233,6 +221,7 @@ Existen tres mecanismos  de entrecomillado: el carácter de  escape, las comilla
 simples y las comillas dobles.
 
 ***** Carácter de escape
+
 Una barra invertida no citada '\' es  el carácter de escape de Bash. Conserva el
 valor literal  del siguiente carácter,  con la excepción  de la nueva  línea. Si
 aparece un par \newline, y la propia  barra invertida no está entre comillas, el
@@ -240,12 +229,14 @@ aparece un par \newline, y la propia  barra invertida no está entre comillas, e
 de entrada y se ignora efectivamente).
 
 ***** Comillas simples
+
 Al encerrar  los caracteres entre  comillas simples  (''') se conserva  el valor
 literal de cada carácter dentro de  las comillas. Las comillas simples no pueden
 aparecer entre comillas simples, ni siquiera  cuando van precedidas de una barra
 invertida.
 
 ***** Comillas dobles
+
 Encerrar caracteres  entre comillas  dobles ('"') preserva  el valor  literal de
 todos los caracteres dentro de las comillas,  con la excepción de '$', '`', '\',
 y, cuando la expansión del historial  está habilitada, '!'. Cuando el shell está
@@ -267,6 +258,7 @@ Los parámetros especiales '*' y '@'  tienen un significado especial cuando est�
 entre comillas dobles (véase Expansión de parámetros de la shell).
 
 ***** Citas ANSI-C
+
 Las palabras de  la forma $'string' se  tratan de forma especial.  La palabra se
 expande  a cadena,  con  caracteres  de barra  invertida  reemplazados según  lo
 especificado  por  el  estándar  ANSI  C. Las  secuencias  de  escape  de  barra
@@ -274,61 +266,46 @@ invertida, si están presentes, se decodifican como sigue:
 
 - ~\a~
   alerta (campana)
-
 - ~\b~
   retroceso
-
 - ~\e~, ~\E~
   un carácter de escape (no ANSI C)
-
 - ~\f~
   alimentación de forma
-
 - ~\n~
   línea nueva
-
 - ~\r~
   retorno de carro
-
 - ~\t~
   tabulación horizontal
-
 - ~\v~
   tabulación vertical
-
 - ~\\~
   barra invertida
-
 - ~\'~
   comilla simple
-
 - ~\"~ comillas dobles
-
 - ~\?~
   signo de interrogación
-
 - ~\nnn~
   el carácter  de ocho  bits cuyo valor  es el  valor octal nnn  (de uno  a tres
   dígitos octales)
-
 - ~\xHH~
   el carácter  de ocho bits  cuyo valor  es el valor  hexadecimal HH (uno  o dos
   dígitos hexadecimales)
-
 - ~\uHHHH~
   el carácter  Unicode (ISO/IEC 10646) cuyo  valor es el valor  hexadecimal HHHH
   (de uno a cuatro dígitos hexadecimales)
 - ~\UHHHHHHHH~
   el  carácter  Unicode (ISO/IEC  10646)  cuyo  valor  es el  valor  hexadecimal
   HHHHHHHH (de uno a ocho dígitos hexadecimales)
-
 - ~\cx~
   un carácter de control-x
-
 El resultado expandido está entre comillas simples, como si el signo de dólar no
 hubiera estado presente.
 
 ***** Comentarios
+
 En un  intérprete de  comandos no  interactivo, o en  un intérprete  de comandos
 interactivo  en  el  que  esté   activada  la  opción  interactive_comments  del
 complemento shopt (véase El complemento shopt),  una palabra que empiece por '#'

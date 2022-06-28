@@ -1,5 +1,4 @@
 #+title: Notas de desarrollo de Software
-#+startup: nofold
 
 * Develop
 - [[file:develop/emacs/emacs.org][Doom Emacs]]
@@ -7,4 +6,4 @@
 * Tools
 - [[file:tools/bash/bash.org][Bash]]
 - [[file:tools/terminator/terminator.org][Terminator]]
-- [[file:tools/horizon/horizon.org][VMware Horizon Client]]
+- [[file:tools/horizon/horizon.org][VMware Horizon]]

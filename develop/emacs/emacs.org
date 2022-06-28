@@ -235,29 +235,22 @@ que puedes probar, primero:
 + Investigue el registro =*Mensajes*= para ver si hay advertencias o mensajes de
   error.  Este   registro  se   puede  abrir  con   =SPC  h  e=,   =C-h  e=   o  =M-x
   view-echo-area-messages=.
-
 + Busca los errores/advertencias en el FAQ y en el [[https://github.com/hlissner/doom-emacs/issues][Domm's issue tracker]]. Es
   posible que ya  exista una solución para  su problema. El FAQ  se puede buscar
   desde dentro de  Doom con =SPC h  d f= (o =C-h d  f= para los usuarios  que no son
   malvados).
-
 + Ejecute ~bin/doom doctor~ en la línea de comandos para diagnosticar problemas
   comunes  con su  entorno  y configuración.  También  sugerirá soluciones  para
   ellos.
-
 + ~bin/doom clean~ se asegurará de que el problema no es un código de bytes
   antiguo en su  configuración privada o en  el núcleo de Doom. Si  no has usado
   ~bin/doom compile~, no hay necesidad de hacer esto.
-
 + ~bin/doom sync~ se asegurará de que el problema no es que falten paquetes o
   que los archivos autoloads estén obsoletos
-
 + ~bin/doom build~ se asegurará de que el problema no sea el código de bytes del
   paquete antiguo o los enlaces simbólicos rotos.
-
 + ~bin/doom update~ se asegurará de que sus paquetes estén actualizados,
   eliminando los problemas que se originan en el upstream.
-
 + Si sabe qué módulo(s) es(son) relevante(s) para su problema, compruebe su
   documentación (pulse ~SPC h  d m~ para saltar a la  documentación de un módulo).
   Su problema puede estar documentado.

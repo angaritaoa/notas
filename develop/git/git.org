@@ -1,7 +1,7 @@
 #+title: Git
-#+startup: nofold
 
 ** Configuración global
+
 #+begin_src bash
 $ git config --global user.name "Andres Angarita"
 $ git config --global user.email "afao@icloud.com"
@@ -11,6 +11,7 @@ $ git config --global --list
 #+end_src
 
 ** Crear un nuevo repositorio
+
 #+begin_src bash
 $ git clone git@gitlab.com:angaritaoa/Notas.git
 $ cd Notas
@@ -21,6 +22,7 @@ $ git push -u origin master
 #+end_src
 
 ** Iniciar un repositorio
+
 #+begin_src bash
 $ git init
 $ git checkout master
@@ -28,11 +30,13 @@ $ git-flow init
 #+end_src
 
 ** Clonar un repositorio
+
 #+begin_src bash
 $ git clone //servidor/<nombre_repo>
 #+end_src
 
 ** Obtener los últimos cambios
+
 #+begin_src bash
 $ git checkout master
 $ git fetch --all origin
@@ -40,11 +44,13 @@ $ git pull --all origin
 #+end_src
 
 ** Listar las ramas
+
 #+begin_src bash
 $ git branch -av
 #+end_src
 
 ** Iniciar una rama feature
+
 #+begin_src bash
 $ git checkout -b feature/C14729 develop
 #+end_src
@@ -54,6 +60,7 @@ $ git-flow feature start C14729
 #+end_src
 
 ** Finalizar una rama feature
+
 #+begin_src bash
 $ git checkout develop
 $ git merge --no-ff feature/C14729
@@ -66,6 +73,7 @@ $ git-flow feature finish C14729
 #+end_src
 
 ** Iniciar una rama release
+
 #+begin_src bash
 $ git checkout -b release/1.0 develop
 #+end_src
@@ -75,6 +83,7 @@ $ git-flow release start 1.0
 #+end_src
 
 ** Finalizar una rama release
+
 #+begin_src bash
 $ git checkout master
 $ git merge --no-ff release/1.0
