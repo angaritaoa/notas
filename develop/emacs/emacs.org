@@ -33,7 +33,7 @@ Agregar =~/.emacs.d/bin= al ~PATH~. ~export PATH=~/.emacs.d/bin:$PATH~
 
 ** Instalar en Windows
 
-Seguir la guía de esta [[https://earvingad.github.io/posts/doom_emacs_windows/][fuente]]
+Seguir la guía de este [[https://earvingad.github.io/posts/doom_emacs_windows/][post]]
 
 ** La utilidad ~bin/doom~
 
