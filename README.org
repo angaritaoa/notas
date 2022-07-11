@@ -1,10 +1,10 @@
 #+title: Notas de desarrollo de Software
 
 * JavaScript Programming
-+ [[file:javascript/angular.org][Angular]]
++ [[file:javascript/angular/README.org][Angular]]
 * Develop
-- [[file:develop/git/git.org][Git]]
+- [[file:develop/git/README.org][Git]]
 * Tools
-- [[file:tools/bash/bash.org][Bash]]
-- [[file:tools/terminator/terminator.org][Terminator]]
-- [[file:tools/horizon/horizon.org][VMware Horizon]]
+- [[file:tools/bash/README.org][Bash]]
+- [[file:tools/terminator/README.org][Terminator]]
+- [[file:tools/horizon/README.org][VMware Horizon]]
