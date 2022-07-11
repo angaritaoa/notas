@@ -1,7 +1,8 @@
 #+title: Notas de desarrollo de Software
 
+* JavaScript Programming
++ [[file:javascript/angular.org][Angular]]
 * Develop
-- [[file:develop/emacs/emacs.org][Doom Emacs]]
 - [[file:develop/git/git.org][Git]]
 * Tools
 - [[file:tools/bash/bash.org][Bash]]
