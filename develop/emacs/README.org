@@ -1,0 +1,26 @@
+#+title: Doom Emacs
+
+* Tabla de contenido :TOC_4:
+- [[#projects-and-workspaces][Projects and Workspaces]]
+  - [[#workspaces][Workspaces]]
+  - [[#projects][Projects]]
+- [[#files][Files]]
+
+* Projects and Workspaces
+** Workspaces
+| Command | Key       | Description              |
+|---------+-----------+--------------------------|
+|         | ~SPC TAB .~ | Switch to workspace      |
+|         | =SPC TAB l= | Load workspace from file |
+|         | =SPC TAB n= | New workspace            |
+|         | =SPC TAB r= | Rename workspace         |
+|         | =SPC TAB s= | Save workspace to file   |
+** Projects
+| Command | Key     | Description            |
+|---------+---------+------------------------|
+|         | =SPC p p= | Switch project         |
+|         | =SPC SPC= | Find file in project   |
+|         | =SPC ,=   | Find file in workspace |
+|         | =SPC f r= | Recent files           |
+
+* Files

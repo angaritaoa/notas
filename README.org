@@ -4,6 +4,7 @@
 + [[file:javascript/angular/README.org][Angular]]
 * Develop
 - [[file:develop/git/README.org][Git]]
+- [[file:develop/emacs/README.org][Emacs]]
 * Tools
 - [[file:tools/bash/README.org][Bash]]
 - [[file:tools/terminator/README.org][Terminator]]
