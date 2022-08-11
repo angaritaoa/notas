@@ -1,5 +1,7 @@
 #+title: Notas de desarrollo de Software
 
+* Personal
+- [[file:personal/ingles/ingles.org][Ingles]]
 * JavaScript Programming
 + [[file:javascript/angular/README.org][Angular]]
 * Develop

@@ -1,0 +1,29 @@
+#+title: Docker
+
+| Command                                           | Description                                                    |   |
+| docker images                                     | muestra todas las imagenes descaradas desde Docker Hub         |   |
+| docker pull node                                  | Descarga la última version del contenedor de nodejs            |   |
+| docker pull node:18                               | Descarga la versión 18 del contenedor de nodejs                |   |
+| docker pull --platform linux/x86_64 mysql         |                                                                |   |
+| docker image rm node:18                           | Elimina una imagen                                             |   |
+| docker pull mongo                                 |                                                                |   |
+| docker create mongo                               | Crea un contenedor desde una imagen descargado con docker pull |   |
+| docker create --name {monguito} mongo             |                                                                |   |
+| docker create -p27017:27017 --name monguito mongo |                                                                |   |
+| docker container create mongo                     | Crea un contenedor desde una imagen descargado con docker pull |   |
+| docker start {id}                                 | Inicia la ejecución de un contenedor                           |   |
+| docker start monguito                             |                                                                |   |
+| docker ps -a                                      | Muestra los contenedores en ejecución                          |   |
+| docker stop {id}                                  | Detiene la ejecución de un contenedor                          |   |
+| docker rm {name} o {id}                           | Elimina un contenedor                                          |   |
+| docker log monguito                               | Visualiza el log de ejecución del contenedor                   |   |
+| docker log --follow monguito                      |                                                                |   |
+| docker run -d mongo                               | La combinación de: pull create y start                         |   |
+| docker run --name monguito -p27017:27017 -d mongo |                                                                |   |
+| docker network ls                                 |                                                                |   |
+| docker network create mired                       |                                                                |   |
+| docker network rm mired                           |                                                                |   |
+| docker build                                      |                                                                |   |
+| docker build -t miapp:1                           | docker build -t {name}:tag                                     |   |
+| docker create                                     |                                                                |   |
+| docker compose up                                 |                                                                |   |
