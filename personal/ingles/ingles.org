@@ -1,7 +1,7 @@
 #+title: Curso de Ingles
 
 * Tabla de contenido :TOC_4:
-- [[#adverbial-phrases-of-frequency-time-and-place][Adverbial phrases of frequency, time and place]]
+- [[#adverbial-phrases-of-frequency-time-and-place-agosto-10th-2022][Adverbial phrases of frequency, time and place [Agosto 10th, 2022]]]
   - [[#frequency][Frequency]]
     - [[#use][Use]]
     - [[#form][Form]]
@@ -14,7 +14,7 @@
     - [[#use-2][Use]]
     - [[#form-2][Form]]
 
-* Adverbial phrases of frequency, time and place
+* Adverbial phrases of frequency, time and place [Agosto 10th, 2022]
 ** Frequency
 *** Use
 - An *adverbial* phrase is a group of words which always go together. they describe where, when or how often something happens. Adverbial phrases of frequency describe *how often* something happens.
