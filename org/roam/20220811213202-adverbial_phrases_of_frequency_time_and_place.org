@@ -1,0 +1,70 @@
+:PROPERTIES:
+:ID:       3d8f2192-98d0-4da1-802d-ca09182c9856
+:END:
+#+title: Adverbial phrases of frequency, time and place
+
+* Frequency
+** Use
+- An *adverbial* phrase is a group of words which always go together. they describe where, when or how often something happens. Adverbial phrases of frequency describe *how often* something happens.
+  - every morning, every afternoon
+  - every day – daily
+  - severy week – weekly
+  - every month – monthly
+  - every year – annually
+  - every Sunday – on Sundays – on Sunday afternoons
+  - once a day
+  - twice a day
+  - three / four / five times a day
+  - all the time
+** Form
+1) Adverbs of frequency often go in present simple sentences.
+   - I have toast for breakfast every day.
+   - We visit our grandparents twice a month.
+2) Note that ‘on Saturday’ refers to one day. ‘On Saturdays’ means ‘every Saturday’.
+** Common mistakes
+1) Some students write adverbs of frequency in the wrong place.
+   - We every day go the park. => We go to the park every day.
+2) Some students use the plural form with *every*.
+   - John goes swimming every days. => John goes swimming every day.
+* Time
+** Use
+- Use adverbs and adverbial phrases of time to talk about *when* you do something.
+- Adverbs of time include:
+  - today, tomorrow, tonight, yesterday, tomorrow, nowadays
+  - now, first of all, beforehand
+  - soon, afterwards, later, next, then
+** Form
+1) Adverbs of time usually go at the beginning or the end of a sentence or clause.
+   - Tomorrow, I’m going to the beach.
+   - I’m going to the beach tomorrow.
+   - First of all, we had a drink at a café.
+   - We had a drink at a café first of all.
+   - I’m going to the supermarket, and afterwards I’m going to the library.
+   - I’m going to the supermarket, and I’m going to the library afterwards.
+2) It is more common to use *then* at the beginning of a sentence or clause.
+   - Then we arrived at the castle.
+   - I’m going to finish my work and then I’m going to have a drink.
+   - It is more common to use *soon* and *now* at the end of a sentence.
+   - We’re going on holiday soon.
+   - I’m going home now.
+** Common mistakes
+1) Don’t use an adverb of time between the subject and the object of a sentence.
+   - I went yesterday to the zoo. => I went to the zoo yesterday. / Yesterday I went to the zoo.
+   - I’m going now to the bank. => I’m going to the bank now.
+2) You must use a noun after *After* and *Before*. Otherwise, use *afterwards* or *beforehand*.
+   - I’ll be late to class tomorrow. I’m going to the doctors before. => I’ll be late to class tomorrow. I’m going to the doctors *beforehand*.
+   - I’m going to my English class and I’m going to the bar after. => I’m going to my English class and I’m going to the bar *afterwards*.
+* Place
+** Use
+- Use adverbs and adverbial phrases of *place* to talk about *where* something happens.
+  - Adverbs of place include:
+  - outside, inside, indoors, upstairs, downstairs
+  - (over) here, (over) there
+  - abroad, overseas
+** Form
+1) Adverbs of place usually go after a verb.
+   - She lives abroad.
+   - Let’s go indoors.
+2) Adverbs of place can also go after the object of the sentence.
+   - Rachel works in the office upstairs.
+   - Your bag is on the table over there.
