@@ -1,11 +1,8 @@
 #+title: Terminator
 
-** ¿Qué es Terminator?
-
+* ¿Qué es Terminator?
 En su forma más simple, Terminator es un emulador de terminal como xterm, gnome-terminal, konsole, etc. En su forma más compleja te permite volar... metafóricamente al menos.
-
-** Algunas de las funciones principales
-
+* Algunas de las funciones principales
 + Organizar los terminales en una estructura tipo cuadrícula
 + Pestañas
 + Reordenación de los terminales mediante arrastrar y soltar
@@ -14,19 +11,13 @@ En su forma más simple, Terminator es un emulador de terminal como xterm, gnome
 + Escritura simultánea en grupos arbitrarios de terminales
 + Extensible mediante plugins
 + Disposiciones dinámicas y personalizables
-
-** Shortcuts
-
-+--------------------------------------------------+
-| Acción                        | Shortcuts        |
-|-------------------------------+------------------|
-| Enfocar el terminal inferior  | =Alt + ↓=          |
-| Enfocar el terminal izquierdo | =Alt + ←=          |
-| Enfocar el terminal derecho   | =Alt + →=          |
-| Enfocar el terminal superior  | =Alt + ↑=          |
-| Dividir horizontalmente       | =Ctrl + Shift + O= |
-| Dividir verticalmente         | =Ctrl + Shift + E= |
-
-** Colores: One Dark
+* Shortcuts
+- [[kbd:][Alt ↓]] :: Enfocar el terminal inferior
+- [[kbd:][Alt ←]] :: Enfocar el terminal izquierdo
+- [[kbd:][Alt →]] :: Enfocar el terminal derecho
+- [[kbd:][Alt →]] :: Enfocar el terminal superior
+- [[kbd:][Alt Shift O]] :: Dividir horizontalmente
+- [[kbd:][Alt Shift E]] :: Dividir verticalmente
+* Colores: One Dark
 
 [[./dark.png]]

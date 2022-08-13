@@ -5,28 +5,16 @@
   - [[#workspaces][Workspaces]]
   - [[#projects][Projects]]
 - [[#files][Files]]
-- [[#org-roam-construye-un-segundo-cerebro-en-emacs][Org Roam: Construye un segundo cerebro en Emacs]]
 
 * Projects and Workspaces
 ** Workspaces
-| Command | Key       | Description              |
-|---------+-----------+--------------------------|
-|         | ~SPC TAB .~ | Switch to workspace      |
-|         | =SPC TAB l= | Load workspace from file |
-|         | =SPC TAB n= | New workspace            |
-|         | =SPC TAB r= | Rename workspace         |
-|         | =SPC TAB s= | Save workspace to file   |
+- [[kbd:][SPC TAB .]] :: Load workspace from file
+- [[kbd:][SPC TAB n]] :: New workspace
+- [[kbd:][SPC TAB r]] :: Rename workspace
+- [[kbd:][SPC TAB s]] :: Save workspace to file
 ** Projects
-| Command | Key     | Description            |
-|---------+---------+------------------------|
-|         | =SPC p p= | Switch project         |
-|         | =SPC SPC= | Find file in project   |
-|         | =SPC ,=   | Find file in workspace |
-
+- [[kbd:][SPC p p]] :: Switch project
+- [[kbd:][SPC SPC]] :: Find file in project
+- [[kbd:][SPC ,]]   :: Find file in workspace
 * Files
-| Command | Key     | Description  |
-|---------+---------+--------------|
-|         | =SPC f r= | Recent files |
-
-* Org Roam: Construye un segundo cerebro en Emacs
-- Org Mode es conocido por ser una gran herramienta no sólo para escribir y tomar notas personales, sino también para las listas TODO, la planificación de proyectos, el seguimiento del tiempo, y mucho más. Una vez que empieces a invertir realmente en Org Mode, eventualmente tendrás que idear un sistema de gestión de tus archivos Org para que sea fácil almacenar y encontrar la información que necesitas.
+- [[kbd:][SPC f r]] :: Recent files

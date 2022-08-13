@@ -1,6 +1,6 @@
 #+title: Git
 
-** Configuración global
+* Configuración global
 
 #+begin_src bash
 $ git config --global user.name "Andres Angarita"
@@ -10,7 +10,7 @@ $ git config --global color.ui true
 $ git config --global --list
 #+end_src
 
-** Crear un nuevo repositorio
+* Crear un nuevo repositorio
 
 #+begin_src bash
 $ git clone git@gitlab.com:angaritaoa/Notas.git
@@ -21,7 +21,7 @@ $ git commit -m "add README"
 $ git push -u origin master
 #+end_src
 
-** Iniciar un repositorio
+* Iniciar un repositorio
 
 #+begin_src bash
 $ git init
@@ -29,13 +29,13 @@ $ git checkout master
 $ git-flow init
 #+end_src
 
-** Clonar un repositorio
+* Clonar un repositorio
 
 #+begin_src bash
 $ git clone //servidor/<nombre_repo>
 #+end_src
 
-** Obtener los últimos cambios
+* Obtener los últimos cambios
 
 #+begin_src bash
 $ git checkout master
@@ -43,13 +43,13 @@ $ git fetch --all origin
 $ git pull --all origin
 #+end_src
 
-** Listar las ramas
+* Listar las ramas
 
 #+begin_src bash
 $ git branch -av
 #+end_src
 
-** Iniciar una rama feature
+* Iniciar una rama feature
 
 #+begin_src bash
 $ git checkout -b feature/C14729 develop
@@ -59,7 +59,7 @@ $ git checkout -b feature/C14729 develop
 $ git-flow feature start C14729
 #+end_src
 
-** Finalizar una rama feature
+* Finalizar una rama feature
 
 #+begin_src bash
 $ git checkout develop
@@ -72,7 +72,7 @@ $ git push
 $ git-flow feature finish C14729
 #+end_src
 
-** Iniciar una rama release
+* Iniciar una rama release
 
 #+begin_src bash
 $ git checkout -b release/1.0 develop
@@ -82,7 +82,7 @@ $ git checkout -b release/1.0 develop
 $ git-flow release start 1.0
 #+end_src
 
-** Finalizar una rama release
+* Finalizar una rama release
 
 #+begin_src bash
 $ git checkout master

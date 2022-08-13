@@ -1,0 +1,3 @@
+#+title: Desarrollo ágil
+
+Desarrollar estas notas en base a la documentación de la siguiente [[https://www.atlassian.com/es/agile][fuente]] de Atlassian

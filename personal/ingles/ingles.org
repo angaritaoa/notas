@@ -1,27 +1,14 @@
 #+title: Curso de Ingles
-
-* Tabla de contenido :TOC_4:
-- [[#adverbial-phrases-of-frequency-time-and-place][Adverbial phrases of frequency, time and place]]
-  - [[#frequency][Frequency]]
-    - [[#use][Use]]
-    - [[#form][Form]]
-    - [[#common-mistakes][Common mistakes]]
-  - [[#time][Time]]
-    - [[#use-1][Use]]
-    - [[#form-1][Form]]
-    - [[#common-mistakes-1][Common mistakes]]
-  - [[#place][Place]]
-    - [[#use-2][Use]]
-    - [[#form-2][Form]]
+#+author: Andres Angarita
+#+date: 2022-08-10
 
 * Adverbial phrases of frequency, time and place
-2022-08-10
 ** Frequency
 *** Use
-- An *adverbial* phrase is a group of words which always go together. they describe where, when or how often something happens. Adverbial phrases of frequency describe *how often* something happens.
+- An *adverbial* phrase is a group of words which always go together. They describe where, when or how often something happens. Adverbial phrases of frequency describe *how often* something happens.
   - every morning, every afternoon
   - every day – daily
-  - severy week – weekly
+  - every week – weekly
   - every month – monthly
   - every year – annually
   - every Sunday – on Sundays – on Sunday afternoons
@@ -43,7 +30,7 @@
 *** Use
 - Use adverbs and adverbial phrases of time to talk about *when* you do something.
 - Adverbs of time include:
-  - today, tomorrow, tonight, yesterday, tomorrow, nowadays
+  - today, tomorrow, tonight, yesterday, nowadays
   - now, first of all, beforehand
   - soon, afterwards, later, next, then
 *** Form
@@ -64,13 +51,12 @@
 1) Don’t use an adverb of time between the subject and the object of a sentence.
    - I went yesterday to the zoo. => I went to the zoo yesterday. / Yesterday I went to the zoo.
    - I’m going now to the bank. => I’m going to the bank now.
-2) You must use a noun after *After* and *Before*. Otherwise, use *afterwards* or *beforehand*.
+2) You must use a noun after *after* and *before*. Otherwise, use *afterwards* or *beforehand*.
    - I’ll be late to class tomorrow. I’m going to the doctors before. => I’ll be late to class tomorrow. I’m going to the doctors *beforehand*.
    - I’m going to my English class and I’m going to the bar after. => I’m going to my English class and I’m going to the bar *afterwards*.
 ** Place
 *** Use
-- Use adverbs and adverbial phrases of *place* to talk about *where* something happens.
-  - Adverbs of place include:
+- Use adverbs and adverbial phrases of *place* to talk about *where* something happens. Adverbs of place include:
   - outside, inside, indoors, upstairs, downstairs
   - (over) here, (over) there
   - abroad, overseas
