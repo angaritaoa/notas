@@ -19,22 +19,22 @@
 | [[kbd:][SPC TAB r]]   | Rename workspace         |
 | [[kbd:][SPC TAB s]]   | Save workspace to file   |
 ** Projects
-| Key Binding | Description                           |
-|-------------+---------------------------------------|
-| [[kbd:][SPC p p]]     | Switch project                        |
-| [[kbd:][SPC SPC]]     | Find file in project <kbd>SPC ,</bbd> |
-| [[kbd:][SPC ,]]       | Find file in workspace                |
+| Key Binding | Description            |
+|-------------+------------------------|
+| [[kbd:][SPC p p]]     | Switch project         |
+| [[kbd:][SPC SPC]]     | Find file in project   |
+| [[kbd:][SPC ,]]       | Find file in workspace |
 * Search
 ** Project search & replace
-- [[kbd:][SPC s p]] :: Search project
-- [[kbd:][SPC s P]] :: Search another project
-- [[kbd:][SPC s d]] :: Search this directory
-- [[kbd:][SPC s D]] :: Search another directory
+- ~SPC s p~ Search project
+- ~SPC s P~ Search another project
+- ~SPC s d~ Search this directory
+- ~SPC s D~ Search another directory
 ** In-buffer searching
-- [[kbd:][SPC s s]] :: (~isearch~)
-- [[kbd:][SPC s S]] :: (~+vertico/search-symbol-at-point~ via ~consult-line~)
-- [[kbd:][SPC s b]] :: (~consult-line~)
-- [[kbd:][SPC s i]] :: Jump to symbol in file
+- =SPC s s= (~isearch~)
+- =SPC s S= (~+vertico/search-symbol-at-point~ via ~consult-line~)
+- =SPC s b= (~consult-line~)
+- =SPC s i= Jump to symbol in file
 ** Vertico integration for various completing commands
 *** General
 - [[kbd:][M-x]], [[kbd:][SPC :]] :: Enhanced M-x
