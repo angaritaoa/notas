@@ -1,10 +1,14 @@
 #+title: Doom Emacs
 
-* Tabla de contenido :TOC_4:
+* Tabla de contenido :TOC:
 - [[#projects-and-workspaces][Projects and Workspaces]]
   - [[#workspaces][Workspaces]]
   - [[#projects][Projects]]
-- [[#files][Files]]
+- [[#search][Search]]
+  - [[#project-search--replace][Project search & replace]]
+  - [[#in-buffer-searching][In-buffer searching]]
+  - [[#vertico-integration-for-various-completing-commands][Vertico integration for various completing commands]]
+- [[#completion][Completion]]
 
 * Projects and Workspaces
 ** Workspaces
@@ -16,5 +20,39 @@
 - [[kbd:][SPC p p]] :: Switch project
 - [[kbd:][SPC SPC]] :: Find file in project
 - [[kbd:][SPC ,]]   :: Find file in workspace
-* Files
-- [[kbd:][SPC f r]] :: Recent files
+* Search
+** Project search & replace
+- [[kbd:][SPC s p]] :: Search project
+- [[kbd:][SPC s P]] :: Search another project
+- [[kbd:][SPC s d]] :: Search this directory
+- [[kbd:][SPC s D]] :: Search another directory
+** In-buffer searching
+- [[kbd:][SPC s s]] :: (~isearch~)
+- [[kbd:][SPC s S]] :: (~+vertico/search-symbol-at-point~ via ~consult-line~)
+- [[kbd:][SPC s b]] :: (~consult-line~)
+- [[kbd:][SPC s i]] :: Jump to symbol in file
+** Vertico integration for various completing commands
+*** General
+- [[kbd:][M-x]], [[kbd:][SPC :]] :: Enhanced M-x
+- [[kbd:][SPC ']]      :: Resume last Vertico session
+*** Jump to files, buffers or projects
+- [[kbd:][SPC RET]]          :: Find bookmark
+- [[kbd:][SPC f f]], [[kbd:][SPC .]]   :: Browse from current directory
+- [[kbd:][SPC p f]], [[kbd:][SPC SPC]] :: Find file in project
+- [[kbd:][SPC f r]]          :: Find recently opened file
+- [[kbd:][SPC p p]]          :: Open another project
+- [[kbd:][SPC b b]], [[kbd:][SPC ,]]   :: Switch to buffer in current workspace
+- [[kbd:][SPC b B]], [[kbd:][SPC <]]   :: Switch to buffer
+* Completion
+- [[kbd:][C-n]]   :: Go to next candidate
+- [[kbd:][C-p]]   :: Go to previous candidate
+- [[kbd:][C-j]]   :: (evil) Go to next candidate
+- [[kbd:][C-k]]   :: (evil) Go to previous candidate
+- [[kbd:][C-h]]   :: Display documentation (if available)
+- [[kbd:][C-u]]   :: Move to previous page of candidates
+- [[kbd:][C-d]]   :: Move to next page of candidates
+- [[kbd:][C-s]]   :: Filter candidates
+- [[kbd:][C-S-s]] :: Search candidates with helm/ivy
+- [[kbd:][C-SPC]] :: Complete common
+- [[kbd:][TAB]]   :: Complete common or select next candidate
+- [[kbd:][S-TAB]] ::  Select previous candidate
