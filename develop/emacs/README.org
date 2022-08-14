@@ -12,16 +12,18 @@
 
 * Projects and Workspaces
 ** Workspaces
-| Keybind   | Description              |
-|-----------+--------------------------|
-| [[kbd:][SPC TAB .]] | Load workspace from file |
-| [[kbd:][SPC TAB n]] | New workspace            |
-| [[kbd:][SPC TAB r]] | Rename workspace         |
-| [[kbd:][SPC TAB s]] | Save workspace to file   |
+| Key Binding | Description              |
+|-------------+--------------------------|
+| [[kbd:][SPC TAB .]]   | Load workspace from file |
+| [[kbd:][SPC TAB n]]   | New workspace            |
+| [[kbd:][SPC TAB r]]   | Rename workspace         |
+| [[kbd:][SPC TAB s]]   | Save workspace to file   |
 ** Projects
-- [[kbd:][SPC p p]] :: Switch project
-- [[kbd:][SPC SPC]] :: Find file in project
-- [[kbd:][SPC ,]]   :: Find file in workspace
+| Key Binding | Description            |
+|-------------+------------------------|
+| [[kbd:][SPC p p]]     | Switch project         |
+| [[kbd:][SPC SPC]]     | Find file in project   |
+| [[kbd:][SPC ,]]       | Find file in workspace |
 * Search
 ** Project search & replace
 - [[kbd:][SPC s p]] :: Search project
