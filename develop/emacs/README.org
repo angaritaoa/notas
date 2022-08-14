@@ -12,10 +12,14 @@
 
 * Projects and Workspaces
 ** Workspaces
-- [[kbd:][SPC TAB .]] - Load workspace from file
-- [[kbd:][SPC TAB n]] - New workspace
-- [[kbd:][SPC TAB r]] - Rename workspace
-- [[kbd:][SPC TAB s]] - Save workspace to file
++-----------+--------------------------+
+| Keybind   | Description              |
++-----------+--------------------------+
+| [[kbd:][SPC TAB .]] | Load workspace from file |
+| [[kbd:][SPC TAB n]] | New workspace            |
+| [[kbd:][SPC TAB r]] | Rename workspace         |
+| [[kbd:][SPC TAB s]] | Save workspace to file   |
++-----------+--------------------------+
 ** Projects
 - [[kbd:][SPC p p]] :: Switch project
 - [[kbd:][SPC SPC]] :: Find file in project
