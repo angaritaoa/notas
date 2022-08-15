@@ -1,11 +1,10 @@
 #+title: Comparatives
 #+date: 2022-08-12
-* Comparatives
-** Use
+* Use
 Use the comparative form to talk about how two things are different.
 - /I am taller than you/.
 - /This book is thicker than that one/.
-** Form
+* Form
 1) If an adjective has one syllable, add *er* to the end. If it ends in *e* already, just add *r*.
    - tall => taller
    - nice => nicer

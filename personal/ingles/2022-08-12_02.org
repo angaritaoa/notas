@@ -1,11 +1,10 @@
 #+title: Superlatives
 #+date: 2022-08-12
-* Superlatives
-** Use
+* Use
 Use the superlative form to describe something that is greater than any other thing.
 - /The Amazon is the longest river in the world/.
 - /Helen is the most intelligent student in the class/.
-** Form
+* Form
 1) Write *the* before all superlatives.
 2) If an adjective is short and has one syllable, add *est* to the end. If it ends in *e* already, just add *st*.
    - tall => *the tallest*
