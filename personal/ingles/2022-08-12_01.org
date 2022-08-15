@@ -1,9 +1,10 @@
 #+title: Comparatives
 #+date: 2022-08-12
 * Use
-Use the comparative form to talk about how two things are different.
-- /I am taller than you/.
-- /This book is thicker than that one/.
+- Use the comparative form to talk about how two things are different. Comparative adjectives are used to compare differences between the two objects they modify (larger, smaller, faster, higher). They are used in sentences where two nouns are compared, in this pattern:
+  - *Noun (subject) + verb + comparative adjective + than + noun (object).*
+    - /I am taller than you/.
+  - /This book is thicker than that one/.
 * Form
 1) If an adjective has one syllable, add *er* to the end. If it ends in *e* already, just add *r*.
    - tall => taller
@@ -25,5 +26,5 @@ Use the comparative form to talk about how two things are different.
    - good => better
    - bad => worse
    - far => further
-Add *than* after a comparative adjective to compare one thing with another. However, this is not always necessary.
-- /My house is smaller than yours/.
+5) Add *than* after a comparative adjective to compare one thing with another. However, this is not always necessary.
+   - /My house is smaller than yours/.
