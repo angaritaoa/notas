@@ -25,5 +25,5 @@ Use the comparative form to talk about how two things are different.
    - good => better
    - bad => worse
    - far => further
-   - Add than after a comparative adjective to compare one thing with another. However, this is not always necessary.
-     - /My house is smaller than yours/.
+Add *than* after a comparative adjective to compare one thing with another. However, this is not always necessary.
+- /My house is smaller than yours/.
