@@ -1,0 +1,37 @@
+#+title: Superlatives
+#+date: 2022-08-12
+* Superlatives
+** Use
+Use the superlative form to describe something that is greater than any other thing.
+- /The Amazon is the longest river in the world/.
+- /Helen is the most intelligent student in the class/.
+** Form
+1) Write *the* before all superlatives.
+2) If an adjective is short and has one syllable, add *est* to the end. If it ends in *e* already, just add *st*.
+   - tall => *the tallest*
+   - nice => *the nicest*
+   - thick => *the thickest*
+   - late => *the latest*
+3) If an adjective ends in *one vowel and one consonant*, write the consonant again, then write *est*. But never write a *w* twice.
+   - big => *the biggest*
+   - new => *the newest* (NOT newwest)
+   - thin => *the  thinnest*
+   - slow => *the slowest* (NOT slowwest)
+   - slim => *the slimmest*
+   - _The biggest cat_ in the world is the lion.
+4) If an adjective has two syllables and ends in *y*, change the y to *i* and add *est*.
+   - funny => *the funniest*
+   - silly => *the silliest*
+   - It’s _the silliest_ film I’ve ever seen!
+5) For other adjectives with two or more syllables, DON’T add est. Write *most* before the adjective.
+   - interesting => *the most interesting*
+   - surprising => *the most surprising*
+   - It’s _the most interesting_ book I’ve ever read.
+6) Some adjectives have irregular superlative forms. These are listed below.
+   - good => *the best*
+   - bad => *the worst*
+   - far => *the furthest*
+7) *In* is often (but not always) used after a superlative adjective to describe where this statement is true.
+   - London is the biggest city *in* England.
+   - Everest is the highest mountain *in* the world.
+   - My brother is the tallest person *in* my family.

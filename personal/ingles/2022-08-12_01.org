@@ -1,0 +1,30 @@
+#+title: Comparatives
+#+date: 2022-08-12
+* Comparatives
+** Use
+Use the comparative form to talk about how two things are different.
+- /I am taller than you/.
+- /This book is thicker than that one/.
+** Form
+1) If an adjective has one syllable, add *er* to the end. If it ends in *e* already, just add *r*.
+   - tall => taller
+   - nice => nicer
+   - thick => thicker
+   - late => later
+2) If an adjective ends in *one vowel and one consonant*, write the consonant again, then write *er*. But never write a *w* twice.
+   - big => bigger
+   - new => newer (NOT newwer)
+   - thin => thinner
+   - slow => slower (NOT slowwer)
+   - slim => slimmer
+   - /My brother is _thinner_ than me/.
+3) If an adjective has two syllables and ends in *y*, change the y to *i* and add *er*.
+   - funny => funnier
+   - silly => sillier
+   - /Which of these books is _funnier_?/
+4) Some adjectives have irregular superlative forms. These are listed below.
+   - good => better
+   - bad => worse
+   - far => further
+   - Add than after a comparative adjective to compare one thing with another. However, this is not always necessary.
+     - /My house is smaller than yours/.
