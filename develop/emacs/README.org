@@ -104,5 +104,9 @@
 * TODO Debugger
 * TODO Docker
 * Magit
-- [[kbd:][SPC g g]]  Start magit
-- Revisar la [[https://github.com/magit/magit#getting-started][documentación]] de magit para aprender
+- Visitar la [[https://magit.vc/][documentación]] oficial para mayor información
+- [[kbd:][SPC g g]] :: Start magit
+- [[kbd:][s]]       :: Stage file at point
+- [[kbd:][u]]       :: Unstage file at point
+- [[kbd:][h]]       :: Help
+- [[kbd:][g]]       :: Refreshes the status buffer
