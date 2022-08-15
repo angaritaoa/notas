@@ -105,3 +105,4 @@
 * TODO Docker
 * Magit
 - [[kbd:][SPC g g]]  Start magit
+- Revisar la [[https://github.com/magit/magit#getting-started][documentación]] de magit para aprender
