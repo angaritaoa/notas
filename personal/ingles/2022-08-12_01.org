@@ -31,9 +31,9 @@
    - bad => worse
    - far => further
 ** Long
-- If an adjective has two syllables and ends in *y* or All adjectives of 3 or more syllables.
-  - modern => more modern
-  - expensive => more expensive
+1) If an adjective has two syllables and not ends in *y* or all adjectives of 3 or more syllables.
+   - modern => more modern
+   - expensive => more expensive
 * Examples
 - John is 1m80. He is tall. But Chris is 1m85. He is *taller* than John.
 - America is big. But Russia is *bigger*.
