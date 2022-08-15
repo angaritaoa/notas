@@ -5,10 +5,21 @@
   - [[#workspaces][Workspaces]]
   - [[#projects][Projects]]
 - [[#search][Search]]
-  - [[#project-search--replace][Project search & replace]]
-  - [[#in-buffer-searching][In-buffer searching]]
-  - [[#vertico-integration-for-various-completing-commands][Vertico integration for various completing commands]]
+  - [[#project][Project]]
+  - [[#in-buffer][In-buffer]]
+  - [[#vertico][Vertico]]
+  - [[#hl-todo][hl-todo]]
+- [[#edit][Edit]]
+- [[#jump][Jump]]
+- [[#checkers][Checkers]]
+  - [[#syntax][Syntax]]
 - [[#completion][Completion]]
+- [[#snippets][Snippets]]
+- [[#templates][Templates]]
+- [[#terminal][Terminal]]
+- [[#debugger][Debugger]]
+- [[#docker][Docker]]
+- [[#magit][Magit]]
 
 * Projects and Workspaces
 ** Workspaces
@@ -21,21 +32,21 @@
 - [[kbd:][SPC SPC]] :: Find file in project
 - [[kbd:][SPC ,]]   :: Find file in workspace
 * Search
-** Project search & replace
+** Project
 - [[kbd:][SPC s p]] :: Search project
 - [[kbd:][SPC s P]] :: Search another project
 - [[kbd:][SPC s d]] :: Search this directory
 - [[kbd:][SPC s D]] :: Search another directory
-** In-buffer searching
-- [[kbd:][SPC s s]] :: (~isearch~)
-- [[kbd:][SPC s S]] :: (~+vertico/search-symbol-at-point~ via ~consult-line~)
-- [[kbd:][SPC s b]] :: (~consult-line~)
-- [[kbd:][SPC s i]] :: Jump to symbol in file
-** Vertico integration for various completing commands
+** In-buffer
+- [[kbd:][SPC s s]] :: Incremental search
+- [[kbd:][SPC s S]] :: Search symbol at point
+- [[kbd:][SPC s b]] :: Search in the buffer
+- [[kbd:][SPC s i]] :: Search symbol in file
+** Vertico
 *** General
 - [[kbd:][M-x]], [[kbd:][SPC :]] :: Enhanced M-x
 - [[kbd:][SPC ']]      :: Resume last Vertico session
-*** Jump to files, buffers or projects
+*** Find
 - [[kbd:][SPC RET]]          :: Find bookmark
 - [[kbd:][SPC f f]], [[kbd:][SPC .]]   :: Browse from current directory
 - [[kbd:][SPC p f]], [[kbd:][SPC SPC]] :: Find file in project
@@ -43,6 +54,34 @@
 - [[kbd:][SPC p p]]          :: Open another project
 - [[kbd:][SPC b b]], [[kbd:][SPC ,]]   :: Switch to buffer in current workspace
 - [[kbd:][SPC b B]], [[kbd:][SPC <]]   :: Switch to buffer
+*** Search
+- [[kbd:][SPC p t]] :: List all 'TODO'/'FIXME' in project
+- [[kbd:][SPC s b]] :: Search the current buffer
+- [[kbd:][SPC s d]] :: Search this directory
+- [[kbd:][SPC s D]] :: Search another directory
+- [[kbd:][SPC s i]] :: Search for symbol in current buffer
+- [[kbd:][SPC s p]] :: Search project
+- [[kbd:][SPC s P]] :: Search another project
+- [[kbd:][SPC s s]] :: Search the current buffer (incrementally)
+** hl-todo
+- [[kbd:][]t]]      :: go to next 'TODO' item
+- [[kbd:][[t]]      :: go to previous 'TODO' item
+- [[kbd:][SPC p t]] :: show all 'TODO' items in a project
+* Edit
+- [[kbd:][gzz]] to toggle new (frozen) cursors at point
+- [[kbd:][gzt]] to toggle mirroring on and off
+- [[kbd:][gzA]] to place cursors at the end of each selected line
+- [[kbd:][gzI]] will place them at the beginning
+* Jump
+- [[kbd:][SPC j l]] :: Jump line
+- [[kbd:][SPC j c]] :: Jump char
+- [[kbd:][SPC j w]] :: Jump window
+* Checkers
+** Syntax
+- [[kbd:][SPC t f]] :: Toggle Flycheck
+- [[kbd:][SPC c x]] :: List errors
+- [[kbd:][] e]]     :: Next error
+- [[kbd:][[ e]]     :: Prevous error
 * Completion
 - [[kbd:][C-n]]   :: Go to next candidate
 - [[kbd:][C-p]]   :: Go to previous candidate
@@ -55,4 +94,14 @@
 - [[kbd:][C-S-s]] :: Search candidates with helm/ivy
 - [[kbd:][C-SPC]] :: Complete common
 - [[kbd:][TAB]]   :: Complete common or select next candidate
-- [[kbd:][S-TAB]] ::  Select previous candidate
+- [[kbd:][S-TAB]] :: Select previous candidate
+* TODO Snippets
+- En [[https://github.com/doomemacs/snippets][doom-snippets]] se encuentra la documentación para crear los snippets
+* TODO Templates
+* Terminal
+- [[kbd:][SPC o t]] :: Toggle vterm pop up window in the current project
+- [[kbd:][SPC o T]] :: Opens vterm in the current window
+* TODO Debugger
+* TODO Docker
+* Magit
+- [[kbd:][SPC g g]]  Start magit
