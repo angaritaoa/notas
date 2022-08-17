@@ -1,0 +1,36 @@
+#+title: some / any / much / many
+#+date: 2022-08-15
+* Some and any
+** Use
+- Use *some* before plural nouns or uncountable nouns.
+  - /There are _some children_ in the street/.
+  - /There is _some money_ in my pocket/.
+- Use *any*, not some, in negative sentences and questions.
+  - There _aren’t any_ children in the street.
+  - There _isn’t any_ money in my pocket.
+  - _Are there any children_ in the street?
+  - _Is there any money_ in your pocket?
+- However, *some* is possible in offers and requests.
+  - Please can I have _some_ chocolate?
+  - Would you like _some_ tea?
+* Much and Many
+** Use
+*** Many
+- Use *many* in negative sentences and questions. We don’t often use it in positive sentences, especially in informal situations. We use *a lot of* / *lots of*.
+- Use *many* with plural nouns.
+  - Are there many Chinese students in your class?
+  - I haven’t got many CDs.
+  - There are many cars on the road today. => There are a lot of cars on the road today.
+- However, we can use *Many* of *Not Many* before the subject of the sentence.
+  - _Many people_ think that trains are too expensive.
+  - _Not many people_ know that you can get free coffee here!
+*** Much
+- We use *much* in negative sentences and questions with *uncountable* nouns. We don’t often use it in positive sentences. We say *a lot of* / *lots of*.
+  - Have you got much money with you?
+  - I haven’t got much money with me.
+  - +I have much money+. => I have a lot of money.
+** Common mistakes
+1) Some students use many with uncountable nouns.
+   - I don’t have many money. => I don’t have much money.
+2) Some students use some in negative sentences.
+   + +I haven’t got some brothers or sisters+. => I haven’t got any brothers or sisters.

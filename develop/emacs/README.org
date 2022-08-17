@@ -106,7 +106,7 @@
 * Magit
 - Visitar la [[https://magit.vc/][documentación]] oficial para mayor información
 - [[kbd:][SPC g g]] :: Start magit
+- [[kbd:][g r/g z]] :: Magit refresh
 - [[kbd:][s]]       :: Stage file at point
 - [[kbd:][u]]       :: Unstage file at point
 - [[kbd:][h]]       :: Help
-- [[kbd:][g]]       :: Refreshes the status buffer
