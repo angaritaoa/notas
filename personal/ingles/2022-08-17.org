@@ -6,6 +6,7 @@
 - Some nouns are uncountable – you canot count them. These include:
   - water, oil, rice, fruit, bead, iformation, money
 - Uncountable nouns have diffeent grmmar rules from countable nouns.
+  |---------------------------------+------------------------------------------------------------------+---------------------------------|
   | *countable singular nouns*        | *countable plural nouns*                                           | *uncountable nouns*               |
   | eg. appe                        | e.g. apples                                                      | e.g. fruit                      |
   |---------------------------------+------------------------------------------------------------------+---------------------------------|
@@ -40,3 +41,4 @@
   |                                 | used with countable nouns:                                       | used with uncountable nouns:    |
   |                                 |                                                                  |                                 |
   |                                 | *several*, *various*, *a few*, *many*                                    | *much*, *a bit of*, *a little*        |
+  |---------------------------------+------------------------------------------------------------------+---------------------------------|
