@@ -1,0 +1,44 @@
+#+title: Uncountable Nouns
+#+date: 2022-08-17
+* Use
+- Some nouns are countable – you can count them. These include:
+  - apples, books, cars, trees
+- Some nouns are uncountable – you canot count them. These include:
+  - water, oil, rice, fruit, bead, iformation, money
+- Uncountable nouns have diffeent grmmar rules from countable nouns.
+  |---------------------------------+------------------------------------------------------------------+---------------------------------|
+  | *countable singular nouns*        | *countable plural nouns*                                           | *uncountable nouns*               |
+  | eg. appe                        | e.g. apples                                                      | e.g. fruit                      |
+  |---------------------------------+------------------------------------------------------------------+---------------------------------|
+  | Singular countable nouns always | Plural countable nouns do not                                    | Uncountable nouns do not need a |
+  | need a determiner:              | need a determiner.                                               | determiner.                     |
+  | a, this, that, my, the etc.     |                                                                  |                                 |
+  |                                 | I like apples.                                                   | I like fruit.                   |
+  | Look at *that* cat!               | Dogs are friendly.                                               |                                 |
+  | Can I have *an* apple?            |                                                                  | But they can use singular       |
+  | Is this *your* bag?               | But they can be used with                                        | determiners:                    |
+  |                                 | determiners:                                                     |                                 |
+  |                                 | Where are *my* shoes?                                              | *This* fruit is nice.             |
+  |                                 | Are *those* pens yours?                                            |                                 |
+  |---------------------------------+------------------------------------------------------------------+---------------------------------|
+  |                                 | You can count countable nouns.                                   | You _cannot_ count uncountable    |
+  |                                 | Can I have *five* apples please?                                   | nouns.                          |
+  |                                 |                                                                  | +Can I have five breads please?+  |
+  |---------------------------------+------------------------------------------------------------------+---------------------------------|
+  | Use singular verbs and          | Use plural verbs and determiners.                                | Use singular verbs and          |
+  | determiners.                    | *These* apples *are* nice.                                           | determiners.                    |
+  | *This* apple *is* nice.             |                                                                  | *This* bread *is* nice.             |
+  |---------------------------------+------------------------------------------------------------------+---------------------------------|
+  |                                 | Some determiners can be used with both countable and uncountable |                                 |
+  |                                 | nouns.                                                           |                                 |
+  |                                 |                                                                  |                                 |
+  |                                 | *some*, *a lot of*, *lots of*, *loads of*, *plenty of*, *any*                |                                 |
+  |                                 |                                                                  |                                 |
+  |                                 | We’ve got *some potatoes*. We need *some bread*                      |                                 |
+  |                                 | We don’t have *any potatoes*. We don’t have *any bread*.             |                                 |
+  |---------------------------------+------------------------------------------------------------------+---------------------------------|
+  |                                 | Some determiners can only be                                     | Some determiners can only be    |
+  |                                 | used with countable nouns:                                       | used with uncountable nouns:    |
+  |                                 |                                                                  |                                 |
+  |                                 | *several*, *various*, *a few*, *many*                                    | *much*, *a bit of*, *a little*        |
+  |---------------------------------+------------------------------------------------------------------+---------------------------------|
