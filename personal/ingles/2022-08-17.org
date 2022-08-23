@@ -16,7 +16,7 @@
   |                                 | I like apples.                                                   | I like fruit.                   |
   | Look at *that* cat!               | Dogs are friendly.                                               |                                 |
   | Can I have *an* apple?            |                                                                  | But they can use singular       |
-  | Is this *your* bag?               | But they can be used with                                        | determiners:                    |
+  | Is *this* your bag?               | But they can be used with                                        | determiners:                    |
   |                                 | determiners:                                                     |                                 |
   |                                 | Where are *my* shoes?                                              | *This* fruit is nice.             |
   |                                 | Are *those* pens yours?                                            |                                 |
